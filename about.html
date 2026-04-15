@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Berkley Security Inc.</title>
+  <meta name="description"
+    content="Berkley Security Inc. has provided custom security alarms, video surveillance, fire systems, medical alerts, and home automation in Mississippi and Louisiana since 1978. Licensed technicians with local expertise.">
+  <meta name="keywords"
+    content="security systems, alarm systems, video surveillance, fire alarms, home automation, security company, Mississippi, Louisiana, Vicksburg, Natchez, about">
+  <meta name="author" content="Berkley Security Inc.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://berkleysecurity.com/about">
+
+  <meta property="og:title" content="About Us | Berkley Security Inc.">
+  <meta property="og:description"
+    content="Learn about our history since 1978, local expertise, and skilled technicians serving Mississippi and Louisiana.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#1a2744',
+            charcoal: '#1A2744',
+            accent: '#3182ce',
+            'accent-light': '#63b3ed',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    .fade-up {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .fade-up.fade-up-active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .hero-pattern {
+      background-color: #1a2744;
+      background-image: linear-gradient(rgba(26, 39, 68, 0.8), rgba(26, 39, 68, 0.8)), url('src/img/aboutus.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+    <link rel="icon" type="image/png" href="src/img/favicon.png">
+</head>
+
+<body class="font-sans text-gray-900 antialiased">
+
+  <div id="top-contact-bar" class="bg-navy text-white text-sm">
+    <div class="max-w-7xl mx-auto px-4 py-2 flex flex-wrap justify-between items-center">
+      <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
+        <a href="tel:1-800-778-3173" class="hover:text-accent-light flex items-center gap-1">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+            </path>
+          </svg>
+          <span class="font-medium">Toll Free: 1-800-778-3173</span>
+        </a>
+        <span class="hidden sm:inline text-gray-400">|</span>
+        <a href="tel:601-636-6955" class="hover:text-accent-light">Vicksburg: (601) 636-6955</a>
+        <a href="tel:601-442-2293" class="hover:text-accent-light">Natchez: (601) 442-2293</a>
+        <a href="tel:318-336-6196" class="hover:text-accent-light">Vidalia: (318) 336-6196</a>
+      </div>
+      <a href="mailto:staff@berkleysecurity.com" class="hover:text-accent-light flex items-center gap-1">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+          </path>
+        </svg>
+        staff@berkleysecurity.com
+      </a>
+    </div>
+  </div>
+
+  <header id="header" class="bg-white sticky top-0 z-50 transition-shadow duration-300 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex items-center justify-between h-16 lg:h-20">
+        <a href="index.html" class="flex items-center gap-2">
+          <img src="src/img/Berkley-Security-Logo.png" alt="Berkley Security Inc." class="h-10 lg:h-12 w-auto">
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-8">
+          <a href="index.html" class="text-gray-700 hover:text-navy font-medium transition-colors">Home</a>
+          <a href="about.html" class="text-gray-700 hover:text-navy font-medium transition-colors">About</a>
+          <a href="services.html" class="text-gray-700 hover:text-navy font-medium transition-colors">Services</a>
+          <a href="blog.html" class="text-gray-700 hover:text-navy font-medium transition-colors">Blog</a>
+          <a href="contact.html" class="text-gray-700 hover:text-navy font-medium transition-colors">Contact</a><a
+            href="https://www.facebook.com/Burglaralarmandvideocameras/" target="_blank" rel="noopener noreferrer"
+            class="text-gray-700 hover:text-navy font-medium transition-colors" aria-label="Facebook"><svg
+              xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook"
+              viewBox="0 0 16 16">
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+            </svg></a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <a href="http://www.invoicecloud.com/vicksburgms"
+            class="hidden md:inline-flex bg-accent hover:bg-blue-600 text-white px-5 py-2.5 rounded-lg font-semibold text-sm transition-colors">
+            Pay Online
+          </a>
+          <button id="menu-btn" class="lg:hidden p-2 text-gray-700 hover:text-navy" aria-label="Open menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="mobile-menu" class="hidden fixed inset-0 z-50 lg:hidden">
+    <div id="menu-overlay" class="fixed inset-0 bg-black/50"></div>
+    <div class="fixed right-0 top-0 bottom-0 w-72 bg-white shadow-xl p-6 flex flex-col">
+      <div class="flex justify-between items-center mb-8">
+        <span class="font-bold text-navy text-lg">Menu</span>
+        <button id="close-menu" class="p-2 text-gray-500 hover:text-gray-700" aria-label="Close menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <nav class="flex flex-col gap-4">
+        <a href="index.html" class="text-gray-700 hover:text-navy font-medium py-2">Home</a>
+        <a href="about.html" class="text-gray-700 hover:text-navy font-medium py-2">About</a>
+        <a href="services.html" class="text-gray-700 hover:text-navy font-medium py-2">Services</a>
+        <a href="blog.html" class="text-gray-700 hover:text-navy font-medium py-2">Blog</a>
+        <a href="contact.html" class="text-gray-700 hover:text-navy font-medium py-2">Contact</a><a
+          href="https://www.facebook.com/Burglaralarmandvideocameras/" target="_blank" rel="noopener noreferrer"
+          class="text-gray-700 hover:text-navy font-medium py-2" aria-label="Facebook"><svg
+            xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook"
+            viewBox="0 0 16 16">
+            <path
+              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+          </svg></a>
+      </nav>
+      <div class="mt-auto pt-6 border-t border-gray-200">
+        <p class="text-sm text-gray-500 mb-3">Toll Free</p>
+        <a href="tel:1-800-778-3173" class="text-navy font-bold text-lg">1-800-778-3173</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero-pattern text-white py-16 md:py-24 lg:py-32">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="max-w-3xl">
+          <p class="text-accent-light font-semibold mb-3 tracking-wide uppercase text-sm">About Us</p>
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">About Berkley Security</h1>
+          <p class="text-xl md:text-2xl text-gray-300 mb-8">Trusted Local Experts Since 1978</p>
+          <div class="flex flex-wrap gap-4">
+            <a href="contact.html#consultation"
+              class="bg-accent hover:bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold text-lg inline-flex items-center gap-2 transition-colors">
+              Get Started
+            </a>
+            <a href="tel:1-800-778-3173"
+              class="bg-white/10 hover:bg-white/20 border border-white/30 text-white px-8 py-4 rounded-lg font-semibold text-lg inline-flex items-center gap-2 transition-colors">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                </path>
+              </svg>
+              Call Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 lg:py-20">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="fade-up">
+            <h2 class="text-3xl md:text-4xl font-bold text-navy mb-6">Our Founding Story</h2>
+            <p class="text-gray-600 mb-4">In 1978, James B. Mason founded Berkley Security with a simple mission: to
+              provide reliable, trustworthy security solutions to homes and businesses in the Vicksburg area. What began
+              as a small, family-operated company has grown into one of the most respected security providers in
+              Mississippi and Louisiana.</p>
+            <p class="text-gray-600 mb-4">From day one, Mr. Mason believed that security isn't just about equipment—it's
+              about people. He built his company on principles of integrity, personalized service, and genuine care for
+              customers. Those values continue to guide us today, nearly five decades later.</p>
+            <p class="text-gray-600">Today, while we've grown to serve communities across multiple states with modern,
+              cutting-edge security systems, we remain true to our roots. Our Vicksburg headquarters still serves as the
+              heart of our operations, and we continue to treat every customer like family.</p>
+          </div>
+          <div class="fade-up">
+            <div class="bg-blue-50 rounded-2xl p-8 lg:p-10">
+              <div class="w-20 h-20 bg-navy rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-navy text-center mb-2">James B. Mason</h3>
+              <p class="text-gray-500 text-center mb-6">Founder, Berkley Security Inc.</p>
+              <blockquote class="text-gray-700 italic text-center">
+                "A security system is only as good as the people behind it. That's why we've always invested in our team
+                as much as our technology."
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 lg:py-20 bg-blue-50">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">Growing With Technology, Staying Local</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">While the security industry has transformed dramatically since
+            1978, our commitment to personalized service hasn't changed. We've invested in the latest technologies while
+            maintaining the local relationships that built our reputation.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                </path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-navy mb-2">Modern Systems</h3>
+            <p class="text-gray-600 text-sm">From smart home integration to cloud-based monitoring, we offer the latest
+              security technologies to keep you protected.</p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                </path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-navy mb-2">Local Trust</h3>
+            <p class="text-gray-600 text-sm">For nearly 50 years, we've built our reputation one customer at a time.
+              We're proud to be trusted by families and businesses throughout the region.</p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
+                </path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-navy mb-2">Community Roots</h3>
+            <p class="text-gray-600 text-sm">With offices in Vicksburg, Natchez, and Vidalia, we're never far away. Our
+              technicians live and work in the communities they serve.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 lg:py-20">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="order-2 lg:order-1">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-blue-50 rounded-xl p-6 text-center">
+                <p class="text-4xl font-bold text-navy mb-2">47+</p>
+                <p class="text-gray-600 text-sm">Years in Business</p>
+              </div>
+              <div class="bg-blue-50 rounded-xl p-6 text-center">
+                <p class="text-4xl font-bold text-navy mb-2">3</p>
+                <p class="text-gray-600 text-sm">Office Locations</p>
+              </div>
+              <div class="bg-blue-50 rounded-xl p-6 text-center">
+                <p class="text-4xl font-bold text-navy mb-2">MS & LA</p>
+                <p class="text-gray-600 text-sm">Licensed States</p>
+              </div>
+              <div class="bg-blue-50 rounded-xl p-6 text-center">
+                <p class="text-4xl font-bold text-navy mb-2">24/7</p>
+                <p class="text-gray-600 text-sm">Emergency Support</p>
+              </div>
+            </div>
+          </div>
+          <div class="order-1 lg:order-2 fade-up">
+            <h2 class="text-3xl md:text-4xl font-bold text-navy mb-6">Skilled Technicians You Can Trust</h2>
+            <p class="text-gray-600 mb-4">Every member of our team is rigorously trained, licensed in Mississippi and
+              Louisiana, and undergoes thorough background checks. We believe your security is too important to trust to
+              anyone less than the best.</p>
+            <p class="text-gray-600 mb-4">Our technicians receive ongoing training to stay current with the latest
+              security technologies and best practices. From initial installation to ongoing maintenance and emergency
+              repairs, you can count on our team for professional, reliable service.</p>
+            <p class="text-gray-600">We take pride in our work and treat every home and business as if it were our own.
+              When you choose Berkley Security, you're choosing a team of dedicated professionals committed to your
+              safety.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 lg:py-20 bg-navy text-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Choose Berkley Security?</h2>
+          <p class="text-gray-300 max-w-2xl mx-auto">For nearly five decades, families and businesses across Mississippi
+            and Louisiana have trusted us to keep them safe.</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-accent-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-lg mb-2">Licensed Technicians</h4>
+              <p class="text-gray-300 text-sm">Fully licensed in MS & LA with thorough background checks for your peace
+                of mind.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-accent-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-lg mb-2">Custom Design</h4>
+              <p class="text-gray-300 text-sm">Every system is designed specifically for your property, needs, and
+                budget.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-accent-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-lg mb-2">1-Year Warranty</h4>
+              <p class="text-gray-300 text-sm">All installations backed by our comprehensive parts and labor warranty.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-accent-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-lg mb-2">24/7 Monitoring</h4>
+              <p class="text-gray-300 text-sm">Round-the-clock monitoring ensures help is always available when you need
+                it most.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-accent-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-lg mb-2">Local Company</h4>
+              <p class="text-gray-300 text-sm">Founded in Vicksburg in 1978, we're deeply rooted in the communities we
+                serve.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 lg:py-20 bg-blue-50">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="text-3xl md:text-4xl font-bold text-navy mb-6">Ready to Get Started?</h2>
+          <p class="text-gray-600 mb-8">Whether you need a new security system or want to upgrade your existing one,
+            we're here to help. Contact us today for a free consultation and custom quote.</p>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a href="contact.html#consultation"
+              class="bg-accent hover:bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold text-lg inline-flex items-center gap-2 transition-colors">
+              Request Free Consultation
+            </a>
+            <a href="tel:1-800-778-3173"
+              class="bg-white hover:bg-blue-50 text-navy border border-gray-300 px-8 py-4 rounded-lg font-semibold text-lg inline-flex items-center gap-2 transition-colors">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                </path>
+              </svg>
+              Call 1-800-778-3173
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-charcoal text-white">
+    <div class="max-w-7xl mx-auto px-4 py-12 lg:py-16">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <img src="src/img/Berkley-Security-Logo-V2-2-Color-White.png" alt="Berkley Security Inc."
+              class="h-10 w-auto">
+          </div>
+          <p class="text-sm text-gray-400 mb-4">Trusted security solutions since 1978. Protecting homes and businesses
+            across Mississippi and Louisiana.</p>
+          <p class="text-sm text-gray-400">Licensed in MS & LA</p>
+        </div>
+        <div>
+          <h4 class="font-bold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-sm text-gray-400 hover:text-white transition-colors">Home</a></li>
+            <li><a href="about.html" class="text-sm text-gray-400 hover:text-white transition-colors">About Us</a></li>
+            <li><a href="services.html" class="text-sm text-gray-400 hover:text-white transition-colors">Services</a>
+            </li>
+            <li><a href="blog.html" class="text-sm text-gray-400 hover:text-white transition-colors">Blog</a>
+            </li>
+            <li><a href="contact.html" class="text-sm text-gray-400 hover:text-white transition-colors">Contact</a></li>
+            <li><a href="https://www.facebook.com/Burglaralarmandvideocameras/" target="_blank"
+                rel="noopener noreferrer" class="text-sm text-gray-400 hover:text-white transition-colors"
+                aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                </svg></a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold mb-4">Services</h4>
+          <ul class="space-y-2">
+            <li><a href="security-systems.html"
+                class="text-sm text-gray-400 hover:text-white transition-colors">Security Alarms</a></li>
+            <li><a href="video-surveillance.html" class="text-sm text-gray-400 hover:text-white transition-colors">Video
+                Surveillance</a></li>
+            <li><a href="fire-alarms.html" class="text-sm text-gray-400 hover:text-white transition-colors">Fire
+                Systems</a></li>
+            <li><a href="medical-alerts.html" class="text-sm text-gray-400 hover:text-white transition-colors">Medical
+                Alerts</a></li>
+            <li><a href="home-automation.html" class="text-sm text-gray-400 hover:text-white transition-colors">Home
+                Automation</a></li>
+            <li><a href="home-theater.html" class="text-sm text-gray-400 hover:text-white transition-colors">Home
+                Theater</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold mb-4">Contact Us</h4>
+          <div class="space-y-3 text-sm">
+            <p class="text-gray-400">
+              <span class="font-semibold text-white">Vicksburg (Main Office)</span><br>
+              <a href="tel:601-636-6955" class="hover:text-white">(601) 636-6955</a>
+            </p>
+            <p class="text-gray-400">
+              <span class="font-semibold text-white">Natchez</span><br>
+              <a href="tel:601-442-2293" class="hover:text-white">(601) 442-2293</a>
+            </p>
+            <p class="text-gray-400">
+              <span class="font-semibold text-white">Vidalia</span><br>
+              <a href="tel:318-336-6196" class="hover:text-white">(318) 336-6196</a>
+            </p>
+            <p class="text-gray-400">
+              <span class="font-semibold text-white">Toll Free</span><br>
+              <a href="tel:1-800-778-3173" class="hover:text-white">1-800-778-3173</a>
+            </p>
+            <p class="text-gray-400">
+              <a href="mailto:staff@berkleysecurity.com" class="hover:text-white">staff@berkleysecurity.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-gray-700">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex flex-wrap justify-between items-center text-sm text-gray-400">
+        <p>&copy; <span id="year"></span> Berkley Security Inc. All rights reserved.</p>
+        <div class="flex gap-4">
+          <a href="privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="terms-and-conditions.html" class="hover:text-white transition-colors">Terms & Conditions</a>
+        </div>
+        <p>Hours: Mon–Fri 8am–5pm | 24/7 Emergency Availability</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="src/js/main.js"></script>
+</body>
+
+</html>

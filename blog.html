@@ -1,0 +1,1594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Berkley Security Inc.</title>
+  <meta name="description"
+    content="Security tips, industry news, and updates from Berkley Security Inc. Learn about home security, safety best practices, and the latest in protection technology.">
+  <meta name="keywords"
+    content="security tips, home security, safety, security news, security blog, Mississippi, Louisiana">
+  <meta name="author" content="Berkley Security Inc.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://berkleysecurity.com/blog">
+
+  <meta property="og:title" content="Blog | Berkley Security Inc.">
+  <meta property="og:description" content="Security tips, industry news, and updates from Berkley Security Inc.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#1a2744',
+            charcoal: '#1A2744',
+            accent: '#3182ce',
+            'accent-light': '#63b3ed',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    .fade-up {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .fade-up.fade-up-active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .hero-pattern {
+      background-color: #1a2744;
+      background-image: linear-gradient(rgba(26, 39, 68, 0.8), rgba(26, 39, 68, 0.8)), url('src/img/slide1-1.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+    <link rel="icon" type="image/png" href="src/img/favicon.png">
+</head>
+
+<body class="font-sans text-gray-900 antialiased">
+
+  <div id="top-contact-bar" class="bg-navy text-white text-sm">
+    <div class="max-w-7xl mx-auto px-4 py-2 flex flex-wrap justify-between items-center">
+      <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
+        <a href="tel:1-800-778-3173" class="hover:text-accent-light flex items-center gap-1">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+            </path>
+          </svg>
+          <span class="font-medium">Toll Free: 1-800-778-3173</span>
+        </a>
+        <span class="hidden sm:inline text-gray-400">|</span>
+        <a href="tel:601-636-6955" class="hover:text-accent-light">Vicksburg: (601) 636-6955</a>
+        <a href="tel:601-442-2293" class="hover:text-accent-light">Natchez: (601) 442-2293</a>
+        <a href="tel:318-336-6196" class="hover:text-accent-light">Vidalia: (318) 336-6196</a>
+      </div>
+      <a href="mailto:staff@berkleysecurity.com" class="hover:text-accent-light flex items-center gap-1">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+          </path>
+        </svg>
+        staff@berkleysecurity.com
+      </a>
+    </div>
+  </div>
+
+  <header id="header" class="bg-white sticky top-0 z-50 transition-shadow duration-300 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex items-center justify-between h-16 lg:h-20">
+        <a href="index.html" class="flex items-center gap-2">
+          <img src="src/img/Berkley-Security-Logo.png" alt="Berkley Security Inc." class="h-10 lg:h-12 w-auto">
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-8">
+          <a href="index.html" class="text-gray-700 hover:text-navy font-medium transition-colors">Home</a>
+          <a href="about.html" class="text-gray-700 hover:text-navy font-medium transition-colors">About</a>
+          <a href="services.html" class="text-gray-700 hover:text-navy font-medium transition-colors">Services</a>
+          <a href="blog.html" class="text-gray-700 hover:text-navy font-medium transition-colors">Blog</a>
+          <a href="contact.html" class="text-gray-700 hover:text-navy font-medium transition-colors">Contact</a><a
+            href="https://www.facebook.com/Burglaralarmandvideocameras/" target="_blank" rel="noopener noreferrer"
+            class="text-gray-700 hover:text-navy font-medium transition-colors" aria-label="Facebook"><svg
+              xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook"
+              viewBox="0 0 16 16">
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+            </svg></a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <a href="http://www.invoicecloud.com/vicksburgms"
+            class="hidden md:inline-flex bg-accent hover:bg-blue-600 text-white px-5 py-2.5 rounded-lg font-semibold text-sm transition-colors">
+            Pay Online
+          </a>
+          <button id="menu-btn" class="lg:hidden p-2 text-gray-700 hover:text-navy" aria-label="Open menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="mobile-menu" class="hidden fixed inset-0 z-50 lg:hidden">
+    <div id="menu-overlay" class="fixed inset-0 bg-black/50"></div>
+    <div class="fixed right-0 top-0 bottom-0 w-72 bg-white shadow-xl p-6 flex flex-col">
+      <div class="flex justify-between items-center mb-8">
+        <span class="font-bold text-navy text-lg">Menu</span>
+        <button id="close-menu" class="p-2 text-gray-500 hover:text-gray-700" aria-label="Close menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <nav class="flex flex-col gap-4">
+        <a href="index.html" class="text-gray-700 hover:text-navy font-medium py-2">Home</a>
+        <a href="about.html" class="text-gray-700 hover:text-navy font-medium py-2">About</a>
+        <a href="services.html" class="text-gray-700 hover:text-navy font-medium py-2">Services</a>
+        <a href="blog.html" class="text-gray-700 hover:text-navy font-medium py-2">Blog</a>
+        <a href="contact.html" class="text-gray-700 hover:text-navy font-medium py-2">Contact</a><a
+          href="https://www.facebook.com/Burglaralarmandvideocameras/" target="_blank" rel="noopener noreferrer"
+          class="text-gray-700 hover:text-navy font-medium py-2" aria-label="Facebook"><svg
+            xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook"
+            viewBox="0 0 16 16">
+            <path
+              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+          </svg></a>
+      </nav>
+      <div class="mt-auto pt-6 border-t border-gray-200">
+        <p class="text-sm text-gray-500 mb-3">Toll Free</p>
+        <a href="tel:1-800-778-3173" class="text-navy font-bold text-lg">1-800-778-3173</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+  <section class="hero-pattern text-white py-16 md:py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="max-w-3xl">
+        <p class="text-accent-light font-semibold mb-3 tracking-wide uppercase text-sm">News & Updates</p>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">Security Blog</h1>
+        <p class="text-xl md:text-2xl text-gray-300 mb-8">Tips, news, and insights to help you protect what matters most.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 lg:py-20 bg-blue-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">January 9, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Door Reinforcement Hardware: Your First Physical Barrier</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Most residential doors can be kicked in with minimal force. Learn how reinforcement hardware hardens your entry points against forced entry.</p>
+              <a href="blog/blog-door-reinforcement-hardware.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">January 8, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Self-Storage Facility Security: Protecting Customer Belongings</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Self-storage facilities store millions in customer belongings. Learn the security measures that protect your tenants and your liability exposure.</p>
+              <a href="blog/blog-security-for-storage-facilities.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">January 7, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Home Theater Acoustic Treatment: Why Your Room Shape Matters</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Even the best speakers sound mediocre in an untreated room. Learn how acoustic panels, bass traps, and diffusers transform your home theater audio.</p>
+              <a href="blog/blog-home-theater-acoustic-treatment.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">January 6, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">How Security Cameras Reduce Business Liability Exposure</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Video evidence resolves disputes, defends against false claims, and demonstrates due diligence. Learn how cameras directly reduce your liability costs.</p>
+              <a href="blog/blog-security-cameras-business-liability.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">January 5, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Why Choose a Local Security Company Over a National Brand</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">National security brands advertise everywhere, but local providers deliver advantages that big companies simply cannot match. Here is why local wins.</p>
+              <a href="blog/blog-why-local-security-company.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">January 14, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">AI Video Analytics: How Smart Cameras Detect Threats Automatically</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">AI-powered video analytics transform passive cameras into active threat detectors. Learn how object detection and behavior analysis prevent incidents.</p>
+              <a href="blog/blog-cctv-analytics-ai.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">January 13, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Family Emergency Preparedness: Creating a Home Safety Plan</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Every family needs an emergency plan. Learn how to create effective evacuation routes, communication plans, and integrate your security system into your strategy.</p>
+              <a href="blog/blog-emergency-preparedness-families.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">January 12, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">After-Hours Commercial Building Security Best Practices</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Most commercial break-ins happen after hours. Learn the layered security approach that protects your business when no one is on site.</p>
+              <a href="blog/blog-commercial-building-after-hours.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">January 11, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">When to Upgrade Your Security System: 5 Signs It Is Time</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Aging security systems become liabilities. Recognize these five warning signs that indicate your system needs a professional upgrade.</p>
+              <a href="blog/blog-security-system-upgrades.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">January 10, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Swimming Pool Safety Alarms and Surveillance</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Pool drowning is a leading cause of death for children under 5. Learn about pool alarms, gate sensors, and camera systems that prevent tragedies.</p>
+              <a href="blog/blog-swimming-pool-safety-alarms.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">January 19, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Security Lighting Design: Illuminating Vulnerabilities</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Properly designed security lighting eliminates hiding spots, enhances camera performance, and creates a powerful psychological deterrent.</p>
+              <a href="blog/blog-security-lighting-design.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">January 18, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">GPS Medical Alert Systems: Protection Beyond the Home</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">GPS-enabled medical alert devices extend protection beyond the home, providing emergency response for active seniors who travel and exercise outdoors.</p>
+              <a href="blog/blog-medical-alert-gps-tracking.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">January 17, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Wireless vs Hardwired Security Cameras: The Real Trade-Offs</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Wireless cameras offer easy installation, but hardwired systems deliver superior reliability. Understand the real trade-offs for your property.</p>
+              <a href="blog/blog-wireless-vs-hardwired-cameras.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">January 16, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Law Office Security: Protecting Client Confidentiality</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Law offices handle sensitive case files and client communications that require physical security measures beyond standard office protection.</p>
+              <a href="blog/blog-security-for-law-offices.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">January 15, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Smart Scene Automation: One Command Controls Everything</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Smart scenes let you trigger complex multi-device actions with a single tap. Learn how to create powerful automations for security, comfort, and convenience.</p>
+              <a href="blog/blog-smart-scene-automation.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">January 24, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Apartment Complex Security: Protecting Tenants and Property</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Multi-family property owners face unique security challenges. Learn how integrated surveillance, access control, and monitoring protect your investment.</p>
+              <a href="blog/blog-apartment-complex-security.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">January 23, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Driveway Alert Systems: Know Who Is Approaching Your Home</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Driveway sensors provide early warning when someone approaches your property, giving you valuable seconds to assess and respond to visitors.</p>
+              <a href="blog/blog-driveway-alert-systems.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">January 22, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Surround Sound Formats Explained: Dolby Atmos, DTS:X, and More</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Navigate the confusing world of surround sound formats. Understand what Dolby Atmos, DTS:X, and legacy formats mean for your home theater.</p>
+              <a href="blog/blog-surround-sound-formats-explained.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">January 21, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Gun Safe Monitoring: Securing Firearms with Smart Technology</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Responsible firearm ownership includes secure storage. Learn how smart monitoring adds accountability and tamper alerts to your gun safe.</p>
+              <a href="blog/blog-gun-safe-monitoring.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">January 20, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Moving to a New Home? What to Do with Your Security System</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Moving raises important questions about your security system. Should you take it with you, leave it, or start fresh? Here is what to consider.</p>
+              <a href="blog/blog-security-system-moving-guide.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">January 29, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Security and Safety Systems for Assisted Living Facilities</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Assisted living facilities require specialized security that balances resident safety with freedom of movement. Learn the essential systems.</p>
+              <a href="blog/blog-security-for-assisted-living.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">January 28, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Outdoor Movie Night: Professional Projector Setup Guide</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Transform your backyard into an outdoor cinema with a professional projector setup. Learn about brightness, screens, and audio for outdoor viewing.</p>
+              <a href="blog/blog-outdoor-projector-setups.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">January 27, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">How Your Security System Performs During a Power Outage</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Power outages are common in Mississippi. Understand exactly what happens to your alarm, cameras, and monitoring when the electricity goes out.</p>
+              <a href="blog/blog-security-during-power-outage.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">January 26, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Hotel and Hospitality Security Systems</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Hotels balance guest safety with privacy expectations. Learn how modern hospitality security addresses access control, surveillance, and emergency response.</p>
+              <a href="blog/blog-hotel-security-systems.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">January 25, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Security Camera Storage: Local NVR vs Cloud vs Hybrid</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Where your surveillance footage is stored impacts reliability, cost, and accessibility. Compare local, cloud, and hybrid storage approaches.</p>
+              <a href="blog/blog-security-camera-storage-options.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">February 3, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Convenience Store Security: Preventing Robbery and Theft</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Convenience stores face high robbery rates due to cash handling and late hours. Learn proven security strategies that protect employees and profits.</p>
+              <a href="blog/blog-convenience-store-security.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">February 2, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Smart Window Sensors: Beyond Basic Open and Close Detection</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Modern window sensors detect more than open and closed states. Discover how vibration sensing and tilt detection add layers of protection.</p>
+              <a href="blog/blog-smart-window-sensors.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">February 1, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">How to Prevent False Alarms and Avoid Municipal Fines</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">False alarms waste emergency resources and trigger fines. Learn the most common causes and how to eliminate them from your system.</p>
+              <a href="blog/blog-security-system-false-alarm-prevention.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">January 31, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">NVR vs DVR: Choosing the Right Video Recorder for Your System</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Understand the fundamental differences between NVR and DVR systems to make the right recorder choice for your surveillance investment.</p>
+              <a href="blog/blog-network-video-recorder-guide.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">January 30, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Security Solutions for Home-Based Businesses</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Running a business from home blurs the line between residential and commercial security. Learn what additional measures protect your clients and inventory.</p>
+              <a href="blog/blog-security-for-home-based-business.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">February 8, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Do Security Signs and Decals Actually Deter Burglars?</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">The "Protected By" yard sign is iconic, but does it actually stop burglars? Research reveals when signage helps and when it backfires.</p>
+              <a href="blog/blog-security-signs-decals-deterrent.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">February 7, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Dental Office Security: Protecting Patients and Compliance</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Dental offices store controlled substances and sensitive patient data. Learn what security measures protect your practice and ensure HIPAA compliance.</p>
+              <a href="blog/blog-dental-office-security.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">February 6, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Home Theater Projectors vs Large-Screen TVs: The Definitive Guide</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Choosing between a projector and a large-screen TV for your home theater? Compare image quality, cost, ambient light handling, and installation requirements.</p>
+              <a href="blog/blog-home-theater-projector-vs-tv.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">February 5, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Security Systems for Vacation Homes and Seasonal Properties</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Vacation homes sit empty for months at a time. Learn the specialized security approach needed to protect unoccupied properties year-round.</p>
+              <a href="blog/blog-security-for-vacation-homes.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">February 4, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Structured Wiring for New Construction: Future-Proof Your Home</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Building a new home is the perfect time to install structured wiring for security, audio, video, and automation. Pre-wiring saves thousands later.</p>
+              <a href="blog/blog-structured-wiring-new-construction.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">February 13, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Annual Security System Maintenance Checklist</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">A neglected security system is an unreliable one. Follow this annual maintenance checklist to keep every component operating at peak performance.</p>
+              <a href="blog/blog-security-system-maintenance-checklist.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">February 12, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Panic Buttons and Duress Codes: Silent Emergency Communication</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">When openly calling for help is dangerous, panic buttons and duress codes provide silent communication with monitoring centers and law enforcement.</p>
+              <a href="blog/blog-panic-buttons-duress-codes.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">February 11, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Parking Lot Security Cameras: Protecting Employees and Customers</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Parking lots are among the most common locations for violent crime and vehicle theft. Proper surveillance protects people and reduces liability.</p>
+              <a href="blog/blog-parking-lot-security-cameras.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">February 10, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">7 Home Security Myths That Put Your Family at Risk</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">From "burglars only strike at night" to "my neighborhood is too safe," these common security myths could be leaving your home vulnerable.</p>
+              <a href="blog/blog-home-security-myths.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">February 9, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Elevator Emergency Communication Systems for Buildings</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Building codes require emergency communication in all elevators. Learn about ADA-compliant two-way communication and monitoring requirements.</p>
+              <a href="blog/blog-elevator-emergency-communication.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">February 18, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Pharmacy Security Requirements: DEA and State Compliance</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Pharmacies face strict DEA and state security requirements for controlled substances. Learn the alarm and surveillance mandates you must meet.</p>
+              <a href="blog/blog-pharmacy-security-requirements.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">February 17, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Media Room vs Dedicated Home Theater: Which Is Right for You?</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Understand the key differences between a casual media room and a dedicated home theater, and which approach fits your lifestyle and budget.</p>
+              <a href="blog/blog-media-room-vs-home-theater.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">February 16, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Hurricane Preparation for Your Security System</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Mississippi hurricane season demands preparation. Learn how to protect your security system from storm damage and maintain monitoring during outages.</p>
+              <a href="blog/blog-hurricane-prep-security-systems.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">February 15, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Motion Sensor Technology Types: PIR, Microwave, and Dual-Tech</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Not all motion sensors are the same. Understand the technology behind PIR, microwave, and dual-technology sensors for optimal alarm performance.</p>
+              <a href="blog/blog-motion-sensor-technology-types.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">February 14, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Commercial Kitchen Fire Suppression and Hood Systems</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Commercial kitchens require specialized fire suppression systems. Learn about hood suppression technology and code compliance for restaurant kitchens.</p>
+              <a href="blog/blog-commercial-kitchen-fire-suppression.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">February 23, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Home Security During Renovations: Keeping Your Property Safe</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Renovations create massive security gaps. Open walls, absent doors, and constant stranger access demand temporary security measures.</p>
+              <a href="blog/blog-home-security-during-renovation.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">February 22, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">4K vs 1080p Security Cameras: Is the Upgrade Worth It?</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Higher resolution means better detail, but 4K cameras demand more storage and bandwidth. Learn when the upgrade makes sense.</p>
+              <a href="blog/blog-4k-vs-1080p-cameras.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">February 21, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Home Safety Modifications for Aging in Place</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Help seniors live independently and safely at home with these essential safety modifications, medical alerts, and automation technologies.</p>
+              <a href="blog/blog-senior-home-safety-modifications.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">February 20, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Car Dealership Security: Protecting Inventory and Lot Safety</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Auto dealerships face unique risks from lot theft to after-hours vandalism. Learn which surveillance and alarm strategies protect your inventory.</p>
+              <a href="blog/blog-car-dealership-security.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">February 19, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Voice Assistant Integration with Security Systems</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Control your alarm, cameras, and smart locks with voice commands. Learn how Alexa and Google Assistant integrate with professional security.</p>
+              <a href="blog/blog-voice-assistant-security-integration.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">February 28, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">New Homeowner Security Guide: Protecting Your First Home</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Just bought your first home? Follow this essential security guide to protect your biggest investment from day one.</p>
+              <a href="blog/blog-new-homeowner-security-guide.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">February 27, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">PTZ Cameras Explained: When Do You Need Pan-Tilt-Zoom?</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">PTZ cameras offer dynamic coverage for large areas like parking lots and warehouses. Learn when they outperform fixed cameras and when they do not.</p>
+              <a href="blog/blog-ptz-cameras-explained.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">February 26, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Daycare Security Cameras: Safety and Transparency for Parents</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Video surveillance in childcare facilities protects children, reassures parents, and shields operators from liability. Here is how to implement it properly.</p>
+              <a href="blog/blog-daycare-security-cameras.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">February 25, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Security Systems for Rental Properties and Landlords</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Landlords face unique security challenges. Learn how to protect rental properties, reduce liability, and attract quality tenants with smart security investments.</p>
+              <a href="blog/blog-security-for-rental-properties.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">February 24, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Retail Loss Prevention: Surveillance Strategies That Work</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Retail shrinkage costs billions annually. Learn proven surveillance strategies that reduce shoplifting, employee theft, and inventory discrepancies.</p>
+              <a href="blog/blog-retail-loss-prevention.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">March 5, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Intercom Systems for Gated Properties and Multi-Tenant Buildings</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Modern video intercoms provide secure visitor screening for gated communities, apartment complexes, and private estates.</p>
+              <a href="blog/blog-intercom-systems-gated-properties.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">March 4, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">How Security Systems Lower Your Homeowner Insurance Premiums</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">A professionally monitored security system can reduce your homeowner insurance premiums by up to 20%. Here is how to maximize your savings.</p>
+              <a href="blog/blog-insurance-discounts-security-systems.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">March 3, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Outdoor Speaker Systems for Patios, Pools, and Gardens</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Extend your entertainment outdoors with weather-resistant speaker systems designed for patios, pool areas, and garden landscapes.</p>
+              <a href="blog/blog-outdoor-speaker-systems.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">March 2, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Cybersecurity for Smart Homes: Protecting Your Connected Devices</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Smart home devices create digital entry points for hackers. Learn how to secure your connected cameras, locks, and automation systems.</p>
+              <a href="blog/blog-cybersecurity-smart-home.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">March 1, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Fire Sprinklers vs Fire Alarms: Understanding the Difference</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Fire alarms detect and alert, while sprinklers suppress. Learn how these two systems complement each other for maximum fire protection.</p>
+              <a href="blog/blog-fire-sprinkler-vs-alarm-systems.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">March 10, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Glass Break Sensors: A Critical Layer of Home Security</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Discover how acoustic glass break sensors detect forced window entry instantly and complement your existing door and motion sensor coverage.</p>
+              <a href="blog/blog-glass-break-sensors.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">March 9, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Construction Site Security: Preventing Theft and Vandalism</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Construction sites lose billions annually to equipment theft and material vandalism. Learn how temporary surveillance and alarm systems protect active job sites.</p>
+              <a href="blog/blog-construction-site-security.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">March 8, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Are Video Doorbell Cameras Worth It? A Professional Perspective</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Video doorbells are popular, but are they a real security tool or just a novelty? Learn the benefits, limitations, and the professional alternative.</p>
+              <a href="blog/blog-doorbell-cameras-worth-it.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">March 7, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Emergency Lighting Requirements for Commercial Buildings</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Emergency exit lighting is legally required in commercial buildings. Understand the codes, technology options, and testing requirements to stay compliant.</p>
+              <a href="blog/blog-emergency-lighting-requirements.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">March 6, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Why Battery Backup Is Essential for Your Security System</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Power outages leave your home vulnerable unless your security system has proper battery backup. Learn what to look for and how long backup power should last.</p>
+              <a href="blog/blog-security-system-battery-backup.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">March 15, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">School Security Systems: Protecting Students and Staff</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Comprehensive school security requires layered systems including access control, video surveillance, lockdown capabilities, and visitor management.</p>
+              <a href="blog/blog-school-security-systems.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">March 14, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Outdoor Camera Weatherproofing: What IP Ratings Mean</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Understanding IP ratings is crucial when selecting outdoor cameras. Learn what IP66, IP67, and IK10 mean for your surveillance investment.</p>
+              <a href="blog/blog-outdoor-camera-weatherproofing.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">March 13, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Garage Door Automation and Security Integration</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Your garage door is one of the largest and most vulnerable entry points. Learn how smart automation locks down this critical access point.</p>
+              <a href="blog/blog-garage-door-automation.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">March 12, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Restaurant Security Systems: Protecting Your Business</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Restaurants face unique threats from employee theft to slip-and-fall liability. Learn which security systems address these specific hospitality challenges.</p>
+              <a href="blog/blog-restaurant-security-systems.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">March 11, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Water Leak Detection Systems: Preventing Costly Damage</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Water damage accounts for billions in insurance claims annually. Smart leak detectors provide early alerts that save you from catastrophic property loss.</p>
+              <a href="blog/blog-water-leak-detection-systems.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">March 20, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Security Camera Placement Guide: Where to Install for Maximum Coverage</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Strategic camera placement eliminates blind spots and maximizes evidence quality. Learn the optimal positions for residential and commercial properties.</p>
+              <a href="blog/blog-security-camera-placement-guide.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">March 19, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Pet-Friendly Motion Sensors: Security Without False Alarms</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Tired of your pets triggering the alarm? Modern pet-immune motion sensors distinguish between animals and intruders with surprising accuracy.</p>
+              <a href="blog/blog-pet-friendly-motion-sensors.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">March 18, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Church Security Systems: Protecting Houses of Worship</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Houses of worship face unique security challenges including large gatherings, open-door policies, and diverse facility usage. Here is how to address them.</p>
+              <a href="blog/blog-church-security-systems.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">March 17, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Smart Thermostat Integration with Home Security Systems</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Discover how integrating smart thermostats with your security system saves energy, detects emergencies, and enhances comfort automatically.</p>
+              <a href="blog/blog-thermostat-integration-security.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">March 16, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Alarm Monitoring Plans Explained: What You Need to Know</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Understanding the differences between self-monitoring, professional monitoring, and interactive monitoring helps you choose the right plan for your needs.</p>
+              <a href="blog/blog-alarm-monitoring-plans-explained.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">March 25, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Multi-Sensor Fire Detection: Faster Alerts, Fewer False Alarms</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Learn how multi-sensor smoke and heat detectors provide faster response times and dramatically reduce costly false alarm dispatches.</p>
+              <a href="blog/blog-multi-sensor-fire-detection.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">March 24, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">How to Choose the Right Security Company in Mississippi</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Not all security companies are created equal. Learn the critical factors to evaluate before signing a monitoring contract.</p>
+              <a href="blog/blog-choosing-right-security-company.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">March 23, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Whole-Home Audio Systems: Music in Every Room</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Explore how distributed audio systems bring premium sound to every corner of your home without cluttering your space with visible speakers.</p>
+              <a href="blog/blog-whole-home-audio-systems.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">March 22, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Night Vision vs Color Night Cameras: What Performs Better?</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Compare traditional infrared night vision to modern color night technology and learn which camera type delivers better evidence quality.</p>
+              <a href="blog/blog-nighttime-security-cameras.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">March 21, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Vacation Home Security Checklist Before You Travel</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Leaving for vacation? Follow this comprehensive security checklist to ensure your home is protected while you are away.</p>
+              <a href="blog/blog-vacation-home-security-checklist.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">March 30, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Access Control Systems: Securing Your Business Entry Points</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Learn how keycard, biometric, and mobile credential access control systems protect commercial facilities from unauthorized entry.</p>
+              <a href="blog/blog-access-control-systems-businesses.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">March 29, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Carbon Monoxide Detectors: The Silent Threat in Your Home</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Carbon monoxide is odorless and deadly. Understand why professionally monitored CO detectors are essential for every household.</p>
+              <a href="blog/blog-carbon-monoxide-detectors-home-safety.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">March 28, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Security Tips for Rural Properties in Mississippi</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Rural homes face unique security challenges including long response times and isolated locations. Here is how to protect your property effectively.</p>
+              <a href="blog/blog-security-tips-rural-properties.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">March 27, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Smart Locks vs Traditional Deadbolts: A Security Comparison</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Evaluate the pros and cons of smart locks against traditional deadbolts and learn which option best integrates with modern home security systems.</p>
+              <a href="blog/blog-smart-locks-home-security.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">March 26, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Warehouse Surveillance: Protecting Inventory and Employees</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Warehouses face unique risks from internal shrinkage to loading dock theft. Learn how industrial-grade surveillance systems address these threats.</p>
+              <a href="blog/blog-warehouse-surveillance-tips.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
+
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">April 4, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Residential vs Commercial Alarms: What You Need to Know</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Understand the distinct differences between home and commercial security systems, and why building codes dictate your choices.</p>
+              <a href="blog/blog-residential-vs-commercial-alarms.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More →</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">April 3, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Life-Saving Fall Detection Systems for Seniors</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Discover how automated fall detection adds a paramount layer of safety, automatically alerting medical services even if the user is incapacitated.</p>
+              <a href="blog/blog-fall-detection-medical-alerts.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More →</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">April 2, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">The Best Home Theater Setups for Any Space</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">From soundbar replacements to immersive multi-channel architectural audio, explore the best customized home theater combinations available.</p>
+              <a href="blog/blog-best-home-theater-setups.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More →</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">April 1, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Smart Lighting Integrations to Deter Intruders</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Automate your schedules to make it look like someone is always home, and sync outdoor lighting with alarms to easily deter and track intruders.</p>
+              <a href="blog/blog-smart-lighting-security.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More →</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">March 31, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Essential Fire Code Requirements for New Businesses</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">A comprehensive guide on fire alarm legal liabilities, AHJ approvals, and the differences between residential alerts and commercial emergency systems.</p>
+              <a href="blog/blog-fire-code-requirements-businesses.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More →</a>
+            </div>
+          </article>
+
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">April 9, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Best Camera Systems for Small Businesses in Canton</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Protect physical assets and ensure employee safety with robust video surveillance systems designed for commercial properties in Canton.</p>
+              <a href="blog/blog-best-camera-systems-small-businesses.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More →</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">April 8, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">How Smart Home Automation Improves Security</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Integrate smart home automation with your security system to create a responsive environment that actively protects your Byram home.</p>
+              <a href="blog/blog-smart-home-automation-security.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More →</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">April 7, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Home Theater Setup Guide for Beginners</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Creating the ultimate cinematic experience requires precise audio engineering. Explore sound system brands and architectural audio for the perfect setup.</p>
+              <a href="blog/blog-home-theater-setup-guide.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More →</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">April 6, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Honeywell vs Hikvision Camera Systems: Which Is Right for You?</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Compare Honeywell and Hikvision surveillance systems. Understand which brand offers the best integration, AI features, and value for your property.</p>
+              <a href="blog/blog-honeywell-vs-hikvision.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More →</a>
+            </div>
+          </article>
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">April 5, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">What Is NFPA 72 and Why It Matters for Your Business</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Understand NFPA 72 compliance, fire code requirements, and local AHJ coordination to keep your commercial property protected and legal.</p>
+              <a href="blog/blog-what-is-nfpa-72.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More →</a>
+            </div>
+          </article>
+        <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+          <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+            <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+            </svg>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <p class="text-sm text-gray-500 mb-2">April 10, 2026</p>
+            <h2 class="text-xl font-bold text-navy mb-3">Best Security Systems for Homes in Jackson, MS</h2>
+            <p class="text-gray-600 text-sm mb-4 flex-grow">Discover the best residential security systems available in Jackson. Learn how customized alarms and smart integrations protect your property.</p>
+            <a href="blog/blog-best-security-systems-jackson-ms.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More →</a>
+          </div>
+        </article>
+        <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+          <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+            <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4h.002z"></path>
+            </svg>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <p class="text-sm text-gray-500 mb-2">April 11, 2026</p>
+            <h2 class="text-xl font-bold text-navy mb-3">Wired vs Wireless Alarm Systems: Which Is Better?</h2>
+            <p class="text-gray-600 text-sm mb-4 flex-grow">Comparing wired and wireless alarm systems for your home or business. Find out which security solution provides the most reliability.</p>
+            <a href="blog/blog-wired-vs-wireless-alarms.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More →</a>
+          </div>
+        </article>
+        <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+          <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+            <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <p class="text-sm text-gray-500 mb-2">April 12, 2026</p>
+            <h2 class="text-xl font-bold text-navy mb-3">How Video Surveillance Prevents Package Theft</h2>
+            <p class="text-gray-600 text-sm mb-4 flex-grow">Package theft is growing rapidly. Learn how professional video surveillance systems block porch pirates and provide peace of mind.</p>
+            <a href="blog/blog-video-surveillance-package-theft.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More →</a>
+          </div>
+        </article>
+        <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+          <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+            <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+            </svg>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <p class="text-sm text-gray-500 mb-2">April 11, 2026</p>
+            <h2 class="text-xl font-bold text-navy mb-3">Top Medical Alert Systems for Seniors Living Alone</h2>
+            <p class="text-gray-600 text-sm mb-4 flex-grow">Advanced medical alert systems offer fall detection and remote help. Explore how caregivers can monitor seniors living independently.</p>
+            <a href="blog/blog-medical-alerts-seniors.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More →</a>
+          </div>
+        </article>
+        <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+          <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+            <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <p class="text-sm text-gray-500 mb-2">April 10, 2026</p>
+            <h2 class="text-xl font-bold text-navy mb-3">DIY vs Professional Security Installation</h2>
+            <p class="text-gray-600 text-sm mb-4 flex-grow">Thinking about a DIY system? Uncover the true risks and why certified professional installation is crucial for compliance and dependability.</p>
+            <a href="blog/blog-diy-vs-professional-installation.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 lg:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-navy mb-6">Have Questions?</h2>
+        <p class="text-gray-600 mb-8">Our security experts are here to help you find the right solution for your home or business.</p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="contact.html#consultation" class="bg-accent hover:bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold text-lg inline-flex items-center gap-2 transition-colors">
+            Contact Us
+          </a>
+          <a href="tel:1-800-778-3173" class="bg-white hover:bg-blue-50 text-navy border border-gray-300 px-8 py-4 rounded-lg font-semibold text-lg inline-flex items-center gap-2 transition-colors">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+            </svg>
+            Call 1-800-778-3173
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <footer class="bg-charcoal text-white">
+    <div class="max-w-7xl mx-auto px-4 py-12 lg:py-16">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <img src="src/img/Berkley-Security-Logo-V2-2-Color-White.png" alt="Berkley Security Inc."
+              class="h-10 w-auto">
+          </div>
+          <p class="text-sm text-gray-400 mb-4">Trusted security solutions since 1978. Protecting homes and businesses
+            across Mississippi and Louisiana.</p>
+          <p class="text-sm text-gray-400">Licensed in MS & LA</p>
+        </div>
+        <div>
+          <h4 class="font-bold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-sm text-gray-400 hover:text-white transition-colors">Home</a></li>
+            <li><a href="about.html" class="text-sm text-gray-400 hover:text-white transition-colors">About Us</a></li>
+            <li><a href="services.html" class="text-sm text-gray-400 hover:text-white transition-colors">Services</a>
+            </li>
+            <li><a href="blog.html" class="text-sm text-gray-400 hover:text-white transition-colors">Blog</a></li>
+            <li><a href="contact.html" class="text-sm text-gray-400 hover:text-white transition-colors">Contact</a></li>
+            <li><a href="https://www.facebook.com/Burglaralarmandvideocameras/" target="_blank"
+                rel="noopener noreferrer" class="text-sm text-gray-400 hover:text-white transition-colors"
+                aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                </svg></a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold mb-4">Services</h4>
+          <ul class="space-y-2">
+            <li><a href="security-systems.html"
+                class="text-sm text-gray-400 hover:text-white transition-colors">Security Alarms</a></li>
+            <li><a href="video-surveillance.html" class="text-sm text-gray-400 hover:text-white transition-colors">Video
+                Surveillance</a></li>
+            <li><a href="fire-alarms.html" class="text-sm text-gray-400 hover:text-white transition-colors">Fire
+                Systems</a></li>
+            <li><a href="medical-alerts.html" class="text-sm text-gray-400 hover:text-white transition-colors">Medical
+                Alerts</a></li>
+            <li><a href="home-automation.html" class="text-sm text-gray-400 hover:text-white transition-colors">Home
+                Automation</a></li>
+            <li><a href="home-theater.html" class="text-sm text-gray-400 hover:text-white transition-colors">Home
+                Theater</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold mb-4">Contact Us</h4>
+          <div class="space-y-3 text-sm">
+            <p class="text-gray-400">
+              <span class="font-semibold text-white">Vicksburg (Main Office)</span><br>
+              <a href="tel:601-636-6955" class="hover:text-white">(601) 636-6955</a>
+            </p>
+            <p class="text-gray-400">
+              <span class="font-semibold text-white">Natchez</span><br>
+              <a href="tel:601-442-2293" class="hover:text-white">(601) 442-2293</a>
+            </p>
+            <p class="text-gray-400">
+              <span class="font-semibold text-white">Vidalia</span><br>
+              <a href="tel:318-336-6196" class="hover:text-white">(318) 336-6196</a>
+            </p>
+            <p class="text-gray-400">
+              <span class="font-semibold text-white">Toll Free</span><br>
+              <a href="tel:1-800-778-3173" class="hover:text-white">1-800-778-3173</a>
+            </p>
+            <p class="text-gray-400">
+              <a href="mailto:staff@berkleysecurity.com" class="hover:text-white">staff@berkleysecurity.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-gray-700">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex flex-wrap justify-between items-center text-sm text-gray-400">
+        <p>&copy; <span id="year"></span> Berkley Security Inc. All rights reserved.</p>
+        <div class="flex gap-4">
+          <a href="privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="terms-and-conditions.html" class="hover:text-white transition-colors">Terms & Conditions</a>
+        </div>
+        <p>Hours: Mon–Fri 8am–5pm | 24/7 Emergency Availability</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="src/js/main.js"></script>
+</body>
+
+</html>
