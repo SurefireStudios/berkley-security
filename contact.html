@@ -681,7 +681,7 @@
         formData.append('website', honeypot);
 
         try {
-          const response = await fetch('send-mail.php', {
+          const response = await fetch('/api/contact', {
             method: 'POST',
             body: formData
           });
