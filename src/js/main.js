@@ -166,7 +166,7 @@
 
           try {
             const formData = new FormData(form);
-            const response = await fetch('https://mailgun-worker.your-subdomain.workers.dev/', {
+            const response = await fetch('/api/contact', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',
