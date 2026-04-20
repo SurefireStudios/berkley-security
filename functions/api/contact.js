@@ -45,7 +45,7 @@ export async function onRequestPost(context) {
 
     // Use environment variables for secrets
     const MAILGUN_API_KEY = env.MAILGUN_API_KEY;
-    const MAILGUN_DOMAIN = env.MAILGUN_DOMAIN || "berkleysecurity.com";
+    const MAILGUN_DOMAIN = env.MAILGUN_DOMAIN || "mg.berkleysecurity.com";
     const FROM_EMAIL = `Berkley Security Website <noreply@${MAILGUN_DOMAIN}>`;
     const TO_EMAIL = 'staff@berkleysecurity.com';
 
