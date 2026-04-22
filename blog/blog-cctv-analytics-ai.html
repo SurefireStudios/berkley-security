@@ -1,305 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Video Analytics: How Smart Cameras Detect Threats Automatically | Berkley Security Inc.</title>
-  <meta name="description"
-    content="Security tips, industry news, and updates from Berkley Security Inc. Learn about home security, safety best practices, and the latest in protection technology.">
-  <meta name="keywords"
-    content="security tips, home security, safety, security news, security blog, Mississippi, Louisiana">
-  <meta name="author" content="Berkley Security Inc.">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://berkleysecurity.com/blog">
-
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Video Analytics: How Smart Cameras Detect Threats Automatically | Berkley Security</title>
+  <meta name="description" content="Learn how AI-powered video analytics detect threats in real time. Virtual tripwires, object classification, loitering detection, and smart alerts that eliminate false alarms. Available in Ridgeland, MS.">
+  <meta name="keywords" content="AI video analytics, smart security cameras, video analytics Mississippi, virtual tripwire cameras, object detection security, intelligent surveillance Ridgeland MS">
+  <meta name="author" content="Berkley Security Inc."><meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://berkleysecurity.com/blog/blog-cctv-analytics-ai.html">
+  <link rel="icon" type="image/png" href="../src/img/favicon.png">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            navy: '#1a2744',
-            charcoal: '#1A2744',
-            accent: '#3182ce',
-            'accent-light': '#63b3ed',
-          },
-          fontFamily: {
-            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
-          },
-        }
-      }
-    }
-  </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script>tailwind.config={theme:{extend:{colors:{navy:'#1a2744',charcoal:'#1A2744',accent:'#3182ce','accent-light':'#63b3ed'},fontFamily:{sans:['Inter','system-ui','-apple-system','sans-serif']}}}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    .fade-up {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-
-    .fade-up.fade-up-active {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .hero-pattern {
-      background-color: #1a2744;
-      background-image: linear-gradient(rgba(26, 39, 68, 0.8), rgba(26, 39, 68, 0.8)), url('../src/img/slide1-1.jpg');
-      background-size: cover;
-      background-position: center;
-    }
-  </style>
-    <link rel="icon" type="image/png" href="../src/img/favicon.png">
-
+  <style>.fade-up{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}.fade-up.fade-up-active{opacity:1;transform:translateY(0)}details summary::-webkit-details-marker{display:none}details summary{list-style:none}details[open] summary .faq-chevron{transform:rotate(180deg)}.faq-chevron{transition:transform .3s ease}</style>
   <meta property="og:title" content="AI Video Analytics: How Smart Cameras Detect Threats Automatically">
-  <meta property="og:description" content="Security tips, industry news, and updates from Berkley Security Inc. Learn about home security, safety best practices, and the latest in protection technology.">
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://berkleysecurity.com/blog/blog-cctv-analytics-ai.html">
-  <meta property="og:image" content="https://berkleysecurity.com/src/img/Berkley-Security-Logo.png">
-  <meta property="og:site_name" content="Berkley Security Inc.">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="AI Video Analytics: How Smart Cameras Detect Threats Automatically">
-  <meta name="twitter:description" content="Security tips, industry news, and updates from Berkley Security Inc. Learn about home security, safety best practices, and the latest in protection technology.">
-  <meta name="twitter:image" content="https://berkleysecurity.com/src/img/Berkley-Security-Logo.png">
+  <meta property="og:description" content="AI-powered video analytics: virtual tripwires, object classification, loitering detection, and smart alerts for businesses.">
+  <meta property="og:type" content="article"><meta property="og:url" content="https://berkleysecurity.com/blog/blog-cctv-analytics-ai.html">
+  <meta property="og:image" content="https://berkleysecurity.com/src/img/Berkley-Security-Logo.png"><meta property="og:site_name" content="Berkley Security Inc.">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI Video Analytics: How Smart Cameras Detect Threats Automatically","description":"Comprehensive guide to AI-powered video analytics for security cameras, covering object classification, virtual tripwires, loitering detection, and smart alerting.","author":{"@type":"Organization","name":"Berkley Security Inc.","url":"https://berkleysecurity.com"},"publisher":{"@type":"Organization","name":"Berkley Security Inc.","logo":{"@type":"ImageObject","url":"https://berkleysecurity.com/src/img/Berkley-Security-Logo.png"}},"datePublished":"2026-01-14","dateModified":"2026-04-22","mainEntityOfPage":"https://berkleysecurity.com/blog/blog-cctv-analytics-ai.html"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is AI video analytics for security cameras?","acceptedAnswer":{"@type":"Answer","text":"AI video analytics uses artificial intelligence to analyze live camera feeds in real time. Instead of passively recording, cameras actively detect specific events: a person crossing a boundary line, a vehicle entering a restricted area, someone loitering near a door, or an object left unattended. The AI distinguishes between people, vehicles, and animals to eliminate false alerts from wind, shadows, or wildlife."}},{"@type":"Question","name":"How do virtual tripwires work on security cameras?","acceptedAnswer":{"@type":"Answer","text":"Virtual tripwires are digital lines drawn directly on the camera's field of view through software. When a person or vehicle crosses the line in a specified direction, the camera generates an immediate alert with a video clip. Unlike physical beam sensors, virtual tripwires require no additional hardware. They can be repositioned instantly through the camera's interface and can distinguish directional crossing (entering vs leaving)."}},{"@type":"Question","name":"Do AI cameras reduce false alarms?","acceptedAnswer":{"@type":"Answer","text":"Yes, dramatically. Traditional motion-detection cameras trigger on any pixel change, including swaying trees, cloud shadows, rain, and animals. AI cameras classify objects before alerting. Most AI-enabled systems reduce false alarms by 90-95% compared to traditional motion detection. This means you receive 5-10 meaningful alerts per day instead of 100+ nuisance notifications."}},{"@type":"Question","name":"Can AI security cameras work with existing systems?","acceptedAnswer":{"@type":"Answer","text":"Most modern NVR platforms support AI analytics either built into the camera or processed at the recorder level. If your existing cameras are 2MP or higher with H.264/H.265 encoding, you may be able to add analytics through an NVR upgrade without replacing cameras. Some platforms like Hikvision AcuSense and Exacq offer edge-based AI that processes on the camera itself, reducing network load."}},{"@type":"Question","name":"How much do AI analytics cameras cost?","acceptedAnswer":{"@type":"Answer","text":"AI-enabled cameras cost $200-$600 per unit, compared to $100-$300 for standard cameras. The premium is $100-$300 per camera. For a typical 8-camera business system, the AI upgrade adds $800-$2,400 total. Most businesses find this pays for itself within months by eliminating the labor cost of reviewing false alarm footage and by enabling faster incident response."}}]}</script>
 </head>
-
 <body class="font-sans text-gray-900 antialiased">
-
-  <div id="top-contact-bar" class="bg-navy text-white text-sm">
-    <div class="max-w-7xl mx-auto px-4 py-2 flex flex-wrap justify-between items-center">
-      <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-        <a href="tel:1-800-778-3173" class="hover:text-accent-light flex items-center gap-1">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
-            </path>
-          </svg>
-          <span class="font-medium">Toll Free: 1-800-778-3173</span>
-        </a>
-        <span class="hidden sm:inline text-gray-400">|</span>
-        <a href="tel:601-636-6955" class="hover:text-accent-light">Vicksburg: (601) 636-6955</a>
-        <a href="tel:601-442-2293" class="hover:text-accent-light">Natchez: (601) 442-2293</a>
-        <a href="tel:318-336-6196" class="hover:text-accent-light">Vidalia: (318) 336-6196</a>
-      </div>
-      <a href="mailto:staff@berkleysecurity.com" class="hover:text-accent-light flex items-center gap-1">
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
-          </path>
-        </svg>
-        staff@berkleysecurity.com
-      </a>
-    </div>
-  </div>
-
-  <header id="header" class="bg-white sticky top-0 z-50 transition-shadow duration-300 shadow-lg">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="flex items-center justify-between h-16 lg:h-20">
-        <a href="../index.html" class="flex items-center gap-2">
-          <img src="../src/img/Berkley-Security-Logo.png" alt="Berkley Security Inc." class="h-10 lg:h-12 w-auto">
-        </a>
-
-        <nav class="hidden lg:flex items-center gap-8">
-          <a href="../index.html" class="text-gray-700 hover:text-navy font-medium transition-colors">Home</a>
-          <a href="../about.html" class="text-gray-700 hover:text-navy font-medium transition-colors">About</a>
-          <a href="../services.html" class="text-gray-700 hover:text-navy font-medium transition-colors">Services</a>
-          <a href="../blog.html" class="text-gray-700 hover:text-navy font-medium transition-colors">Blog</a>
-          <a href="../contact.html" class="text-gray-700 hover:text-navy font-medium transition-colors">Contact</a><a
-            href="https://www.facebook.com/Burglaralarmandvideocameras/" target="_blank" rel="noopener noreferrer"
-            class="text-gray-700 hover:text-navy font-medium transition-colors" aria-label="Facebook"><svg
-              xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook"
-              viewBox="0 0 16 16">
-              <path
-                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
-            </svg></a>
-        </nav>
-
-        <div class="flex items-center gap-3">
-          <a href="http://www.invoicecloud.com/vicksburgms"
-            class="hidden md:inline-flex bg-accent hover:bg-blue-600 text-white px-5 py-2.5 rounded-lg font-semibold text-sm transition-colors">
-            Pay Online
-          </a>
-          <button id="menu-btn" class="lg:hidden p-2 text-gray-700 hover:text-navy" aria-label="Open menu">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <div id="mobile-menu" class="hidden fixed inset-0 z-50 lg:hidden">
-    <div id="menu-overlay" class="fixed inset-0 bg-black/50"></div>
-    <div class="fixed right-0 top-0 bottom-0 w-72 bg-white shadow-xl p-6 flex flex-col">
-      <div class="flex justify-between items-center mb-8">
-        <span class="font-bold text-navy text-lg">Menu</span>
-        <button id="close-menu" class="p-2 text-gray-500 hover:text-gray-700" aria-label="Close menu">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-          </svg>
-        </button>
-      </div>
-      <nav class="flex flex-col gap-4">
-        <a href="../index.html" class="text-gray-700 hover:text-navy font-medium py-2">Home</a>
-        <a href="../about.html" class="text-gray-700 hover:text-navy font-medium py-2">About</a>
-        <a href="../services.html" class="text-gray-700 hover:text-navy font-medium py-2">Services</a>
-        <a href="../blog.html" class="text-gray-700 hover:text-navy font-medium py-2">Blog</a>
-        <a href="../contact.html" class="text-gray-700 hover:text-navy font-medium py-2">Contact</a><a
-          href="https://www.facebook.com/Burglaralarmandvideocameras/" target="_blank" rel="noopener noreferrer"
-          class="text-gray-700 hover:text-navy font-medium py-2" aria-label="Facebook"><svg
-            xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook"
-            viewBox="0 0 16 16">
-            <path
-              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
-          </svg></a>
-      </nav>
-      <div class="mt-auto pt-6 border-t border-gray-200">
-        <p class="text-sm text-gray-500 mb-3">Toll Free</p>
-        <a href="tel:1-800-778-3173" class="text-navy font-bold text-lg">1-800-778-3173</a>
-      </div>
-    </div>
-  </div>
+  <div id="top-contact-bar" class="bg-navy text-white text-sm"><div class="max-w-7xl mx-auto px-4 py-2 flex flex-wrap justify-between items-center"><div class="flex flex-wrap items-center gap-x-4 gap-y-1"><a href="tel:1-800-778-3173" class="hover:text-accent-light flex items-center gap-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg><span class="font-medium">Toll Free: 1-800-778-3173</span></a><span class="hidden sm:inline text-gray-400">|</span><a href="tel:601-636-6955" class="hover:text-accent-light">Vicksburg: (601) 636-6955</a><a href="tel:601-442-2293" class="hover:text-accent-light">Natchez: (601) 442-2293</a><a href="tel:318-336-6196" class="hover:text-accent-light">Vidalia: (318) 336-6196</a></div><a href="mailto:staff@berkleysecurity.com" class="hover:text-accent-light flex items-center gap-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>staff@berkleysecurity.com</a></div></div>
+  <header id="header" class="bg-white sticky top-0 z-50 transition-shadow duration-300 shadow-lg"><div class="max-w-7xl mx-auto px-4"><div class="flex items-center justify-between h-16 lg:h-20"><a href="../" class="flex items-center gap-2"><img src="../src/img/Berkley-Security-Logo.png" alt="Berkley Security Inc." class="h-10 lg:h-12 w-auto"></a><nav class="hidden lg:flex items-center gap-8"><a href="../" class="text-gray-700 hover:text-navy font-medium transition-colors">Home</a><a href="../about.html" class="text-gray-700 hover:text-navy font-medium transition-colors">About</a><a href="../services.html" class="text-gray-700 hover:text-navy font-medium transition-colors">Services</a><a href="../blog.html" class="text-gray-700 hover:text-navy font-medium transition-colors">Blog</a><a href="../contact.html" class="text-gray-700 hover:text-navy font-medium transition-colors">Contact</a><a href="https://www.facebook.com/Burglaralarmandvideocameras/" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-navy font-medium transition-colors" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg></a></nav><div class="flex items-center gap-3"><a href="http://www.invoicecloud.com/vicksburgms" class="hidden md:inline-flex bg-accent hover:bg-blue-600 text-white px-5 py-2.5 rounded-lg font-semibold text-sm transition-colors">Pay Online</a><button id="menu-btn" class="lg:hidden p-2 text-gray-700 hover:text-navy" aria-label="Open menu"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button></div></div></div></header>
+  <div id="mobile-menu" class="hidden fixed inset-0 z-50 lg:hidden"><div id="menu-overlay" class="fixed inset-0 bg-black/50"></div><div class="fixed right-0 top-0 bottom-0 w-72 bg-white shadow-xl p-6 flex flex-col"><div class="flex justify-between items-center mb-8"><span class="font-bold text-navy text-lg">Menu</span><button id="close-menu" class="p-2 text-gray-500 hover:text-gray-700" aria-label="Close menu"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button></div><nav class="flex flex-col gap-4"><a href="../" class="text-gray-700 hover:text-navy font-medium py-2">Home</a><a href="../about.html" class="text-gray-700 hover:text-navy font-medium py-2">About</a><a href="../services.html" class="text-gray-700 hover:text-navy font-medium py-2">Services</a><a href="../blog.html" class="text-gray-700 hover:text-navy font-medium py-2">Blog</a><a href="../contact.html" class="text-gray-700 hover:text-navy font-medium py-2">Contact</a></nav><div class="mt-auto pt-6 border-t border-gray-200"><p class="text-sm text-gray-500 mb-3">Toll Free</p><a href="tel:1-800-778-3173" class="text-navy font-bold text-lg">1-800-778-3173</a></div></div></div>
 
   <main>
-      <section class="py-16 bg-blue-50">
-        <div class="max-w-4xl mx-auto px-4 bg-white p-8 md:p-12 rounded-xl shadow-sm">
-          <p class="text-accent font-semibold mb-2 tracking-wide uppercase text-sm">Video Surveillance</p>
-          <h1 class="text-3xl md:text-5xl font-bold text-navy mb-4">AI Video Analytics: How Smart Cameras Detect Threats Automatically</h1>
-          <p class="text-gray-500 mb-8">Published on January 14, 2026 | By Berkley Security Inc.</p>
-          <div class="prose prose-lg max-w-none text-gray-700 space-y-6">
-            <p>Traditional security cameras record everything passively and rely on someone reviewing hours of footage after an incident. AI-powered video analytics flip this model entirely: cameras actively analyze what they see in real time, detect suspicious behavior, and alert you before a crime is completed rather than after.</p>
-            <h2 class="text-2xl font-bold text-navy mt-8 mb-4">Object Classification</h2>
-            <p>AI cameras distinguish between people, vehicles, and animals. This eliminates false motion alerts from trees swaying, clouds casting moving shadows, or squirrels crossing the camera's field of view. Only genuine human or vehicle activity triggers notifications, dramatically reducing alert fatigue.</p>
-            <h2 class="text-2xl font-bold text-navy mt-8 mb-4">Virtual Tripwires and Exclusion Zones</h2>
-            <p>Draw virtual boundary lines on your camera's view. When a person or vehicle crosses the line in a specified direction, an alert fires. Exclusion zones define areas where people should never be present during certain hours. A person entering a loading dock at 3 AM on a Sunday triggers an immediate alert, while the same loading dock during business hours remains unrestricted.</p>
-            <h2 class="text-2xl font-bold text-navy mt-8 mb-4">Loitering and Dwelling Detection</h2>
-            <p>AI analytics can detect when someone lingers in an area beyond a normal time threshold. A person standing near a door for more than 60 seconds, or a vehicle parked in a fire lane for an extended period, generates proactive alerts that allow intervention before any criminal activity begins.</p>
-            <h2 class="text-2xl font-bold text-navy mt-8 mb-4">Smart Analytics in Ridgeland</h2>
-            <p>Business owners in <strong>Ridgeland, MS</strong> deploy Berkley Security's AI-enabled camera systems to transform their surveillance from passive recording to active threat detection. Our technicians configure analytics rules tailored to your specific operational patterns, ensuring meaningful alerts and zero noise.</p>
-          </div>
-          <div class="mt-12 bg-navy text-white p-8 rounded-xl text-center shadow-md">
-            <h3 class="text-2xl font-bold mb-4">Make Your Cameras Intelligent</h3>
-            <p class="mb-6">Stop reviewing footage after the fact. Start preventing incidents in real time. Contact Berkley Security for AI camera solutions.</p>
-            <a href="../contact.html" class="bg-accent hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold text-lg inline-block transition-colors">Deploy AI Analytics</a>
-          </div>
-        
-          <!-- Related Articles -->
-          <div class="mt-16 border-t border-gray-200 pt-8">
-            <h3 class="text-2xl font-bold text-navy mb-6">Read More From Our Blog</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <a href="blog-choosing-right-security-company.html" class="block p-6 bg-white border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
-                <h4 class="text-lg font-bold text-navy mb-2">How to Choose the Right Security Company in Mississippi</h4>
-                <p class="text-accent font-medium text-sm">Read Article &rarr;</p>
-              </a>
-              <a href="blog-church-security-systems.html" class="block p-6 bg-white border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
-                <h4 class="text-lg font-bold text-navy mb-2">Church Security Systems: Protecting Houses of Worship</h4>
-                <p class="text-accent font-medium text-sm">Read Article &rarr;</p>
-              </a>
+    <section class="py-16 bg-blue-50"><div class="max-w-4xl mx-auto px-4 bg-white p-8 md:p-12 rounded-xl shadow-sm">
+      <p class="text-accent font-semibold mb-2 tracking-wide uppercase text-sm">Video Surveillance</p>
+      <h1 class="text-3xl md:text-5xl font-bold text-navy mb-4">AI Video Analytics: How Smart Cameras Detect Threats Automatically</h1>
+      <p class="text-gray-500 mb-8">Updated April 2026 | By Berkley Security Inc. | 8 min read</p>
+
+      <div class="prose prose-lg max-w-none text-gray-700 space-y-6">
+
+        <div class="bg-blue-50 border-l-4 border-accent p-6 rounded-r-lg">
+          <p class="font-bold text-navy mb-2">Quick Answer:</p>
+          <p>AI video analytics transforms <a href="../video-surveillance.html" class="text-accent hover:underline">security cameras</a> from passive recorders into active threat detectors. Instead of reviewing footage after a crime, AI cameras <strong>identify suspicious behavior in real time</strong> and alert you before incidents escalate. Key features include object classification (people vs animals vs vehicles), virtual tripwires, loitering detection, and license plate recognition. AI cameras reduce false alarms by <strong>90-95%</strong> compared to traditional motion detection.</p>
+        </div>
+
+        <p>Traditional security cameras have a fundamental problem: they record everything but detect nothing. Someone has to sit and watch feeds or review hours of footage after something goes wrong. By then, the crime is over, the suspect is gone, and the footage is only useful for a police report. AI-powered video analytics completely flip this model. Cameras actively analyze every frame, understand what they see, and alert you to specific behaviors that matter.</p>
+
+        <h2 class="text-2xl font-bold text-navy mt-10 mb-4">How AI Analytics Work</h2>
+        <p>Modern AI analytics process video through neural networks trained on millions of images. The system runs continuously, evaluating every frame against learned patterns:</p>
+
+        <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 my-6">
+          <p class="font-bold text-navy mb-3">AI Detection Capabilities</p>
+          <div class="grid md:grid-cols-2 gap-4 text-sm">
+            <div>
+              <p class="font-semibold text-navy mb-1">Object Classification</p>
+              <ul class="space-y-1 text-gray-600">
+                <li>Person detection (standing, walking, running)</li>
+                <li>Vehicle detection (car, truck, motorcycle)</li>
+                <li>Animal filtering (dogs, cats, wildlife ignored)</li>
+                <li>Object abandonment (left package or bag)</li>
+              </ul>
             </div>
-            <div class="mt-8 text-center">
-              <a href="../blog.html" class="inline-flex items-center justify-center px-6 py-3 border border-gray-300 shadow-sm text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent transition-colors">
-                View All Articles
-              </a>
+            <div>
+              <p class="font-semibold text-navy mb-1">Behavior Analysis</p>
+              <ul class="space-y-1 text-gray-600">
+                <li>Loitering beyond time threshold</li>
+                <li>Direction-specific boundary crossing</li>
+                <li>Crowd density monitoring</li>
+                <li>Unusual motion patterns</li>
+              </ul>
             </div>
           </div>
         </div>
-      </section>
-    </main></main>
 
-  <footer class="bg-charcoal text-white">
-    <div class="max-w-7xl mx-auto px-4 py-12 lg:py-16">
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-        <div>
-          <div class="flex items-center gap-2 mb-4">
-            <img src="../src/img/Berkley-Security-Logo-V2-2-Color-White.png" alt="Berkley Security Inc."
-              class="h-10 w-auto">
-          </div>
-          <p class="text-sm text-gray-400 mb-4">Trusted security solutions since 1978. Protecting homes and businesses
-            across Mississippi and Louisiana.</p>
-          <p class="text-sm text-gray-400">Licensed in MS & LA</p>
+        <h2 class="text-2xl font-bold text-navy mt-10 mb-4">Object Classification: Ending False Alarm Fatigue</h2>
+        <p>The #1 complaint about traditional motion-detection cameras: too many false alerts. Trees sway, clouds cast shadows, rain falls, animals cross the frame. Every pixel change triggers a notification. After a week of 100+ daily false alerts, most people disable notifications entirely, defeating the purpose of having cameras.</p>
+        <p>AI object classification solves this completely. The camera identifies <strong>what</strong> caused the motion before deciding whether to alert:</p>
+        <ul class="list-disc pl-6 space-y-2">
+          <li><strong>Person detected at back door.</strong> Alert sent immediately with snapshot.</li>
+          <li><strong>Cat walking through parking lot.</strong> Recorded but no alert.</li>
+          <li><strong>Tree branch moving in wind.</strong> Ignored entirely.</li>
+          <li><strong>Vehicle entering lot after hours.</strong> Alert sent with license plate capture.</li>
+        </ul>
+        <p>Result: <strong>5-10 meaningful alerts per day</strong> instead of 100+ nuisance notifications. Every alert matters.</p>
+
+        <h2 class="text-2xl font-bold text-navy mt-10 mb-4">Virtual Tripwires and Exclusion Zones</h2>
+        <p>Virtual tripwires are digital boundary lines drawn on the camera's field of view through software. No physical hardware required. When a classified object (person or vehicle) crosses the line, an alert triggers:</p>
+        <ul class="list-disc pl-6 space-y-2">
+          <li><strong>Direction-specific.</strong> Alert only when someone enters your property, not when they leave. Reduces alerts by another 50%.</li>
+          <li><strong>Time-scheduled.</strong> A line that is active 6 PM to 6 AM but inactive during business hours. Loading dock access is normal at noon, suspicious at midnight.</li>
+          <li><strong>Multi-zone.</strong> Draw multiple lines and zones on a single camera. Outer perimeter for logging, inner zone for immediate alert.</li>
+        </ul>
+        <p><strong>Exclusion zones</strong> define areas where people should never be. A person detected inside the exclusion zone at any time generates an immediate high-priority alert.</p>
+
+        <h2 class="text-2xl font-bold text-navy mt-10 mb-4">Loitering and Dwelling Detection</h2>
+        <p>AI analytics track how long a person or vehicle stays in a defined area. Configurable thresholds trigger alerts for suspicious behavior:</p>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>Person standing near an entrance for more than <strong>60 seconds</strong></li>
+          <li>Vehicle parked in a fire lane or no-parking zone beyond <strong>5 minutes</strong></li>
+          <li>Person repeatedly walking past the same storefront (potential casing behavior)</li>
+          <li>Unauthorized vehicle in employee parking after business hours</li>
+        </ul>
+
+        <h2 class="text-2xl font-bold text-navy mt-10 mb-4">AI Analytics vs Traditional Motion Detection</h2>
+        <div class="overflow-x-auto my-8">
+          <table class="w-full border-collapse text-sm">
+            <thead><tr class="bg-navy text-white"><th class="p-3 text-left">Feature</th><th class="p-3 text-left">Traditional Motion</th><th class="p-3 text-left">AI Analytics</th></tr></thead>
+            <tbody>
+              <tr class="border-b border-gray-200"><td class="p-3 font-medium">False Alarm Rate</td><td class="p-3">Very high (animals, weather, shadows)</td><td class="p-3">90-95% reduction</td></tr>
+              <tr class="border-b border-gray-200 bg-gray-50"><td class="p-3 font-medium">Object Identification</td><td class="p-3">No (detects pixel changes only)</td><td class="p-3">Yes (person, vehicle, animal)</td></tr>
+              <tr class="border-b border-gray-200"><td class="p-3 font-medium">Behavior Analysis</td><td class="p-3">No</td><td class="p-3">Loitering, direction, zone violations</td></tr>
+              <tr class="border-b border-gray-200 bg-gray-50"><td class="p-3 font-medium">Useful Alerts/Day</td><td class="p-3">Buried in 100+ false alerts</td><td class="p-3">5-10 meaningful alerts</td></tr>
+              <tr class="border-b border-gray-200"><td class="p-3 font-medium">Cost Premium</td><td class="p-3">Base</td><td class="p-3">+$100-300/camera</td></tr>
+            </tbody>
+          </table>
         </div>
-        <div>
-          <h4 class="font-bold mb-4">Quick Links</h4>
-          <ul class="space-y-2">
-            <li><a href="../index.html" class="text-sm text-gray-400 hover:text-white transition-colors">Home</a></li>
-            <li><a href="../about.html" class="text-sm text-gray-400 hover:text-white transition-colors">About Us</a></li>
-            <li><a href="../services.html" class="text-sm text-gray-400 hover:text-white transition-colors">Services</a>
-            </li>
-            <li><a href="../blog.html" class="text-sm text-gray-400 hover:text-white transition-colors">Blog</a></li>
-            <li><a href="../contact.html" class="text-sm text-gray-400 hover:text-white transition-colors">Contact</a></li>
-            <li><a href="https://www.facebook.com/Burglaralarmandvideocameras/" target="_blank"
-                rel="noopener noreferrer" class="text-sm text-gray-400 hover:text-white transition-colors"
-                aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-facebook" viewBox="0 0 16 16">
-                  <path
-                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
-                </svg></a></li>
-          </ul>
+
+        <h2 class="text-2xl font-bold text-navy mt-10 mb-4">Smart Analytics in Ridgeland, MS</h2>
+        <p>Business owners across <strong><a href="../city/ridgeland-ms.html" class="text-accent hover:underline">Ridgeland</a>, <a href="../city/jackson-ms.html" class="text-accent hover:underline">Jackson</a>, <a href="../city/madison-ms.html" class="text-accent hover:underline">Madison</a></strong>, and the metro area deploy Berkley Security's AI-enabled camera systems to transform surveillance from passive recording to active threat detection. Our technicians configure analytics rules tailored to your specific operational patterns, ensuring meaningful alerts with zero noise.</p>
+
+        <div class="bg-blue-50 border border-blue-200 rounded-xl p-6 my-8 text-center">
+          <p class="font-bold text-navy text-lg mb-2">Make Your Cameras Intelligent</p>
+          <p class="text-gray-600 mb-4">Stop reviewing footage after the fact. Start preventing incidents in real time with AI analytics.</p>
+          <a href="../contact.html" class="inline-block bg-accent hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors">Deploy AI Analytics</a>
         </div>
-        <div>
-          <h4 class="font-bold mb-4">Services</h4>
-          <ul class="space-y-2">
-            <li><a href="../security-systems.html"
-                class="text-sm text-gray-400 hover:text-white transition-colors">Security Alarms</a></li>
-            <li><a href="../video-surveillance.html" class="text-sm text-gray-400 hover:text-white transition-colors">Video
-                Surveillance</a></li>
-            <li><a href="../fire-alarms.html" class="text-sm text-gray-400 hover:text-white transition-colors">Fire
-                Systems</a></li>
-            <li><a href="../medical-alerts.html" class="text-sm text-gray-400 hover:text-white transition-colors">Medical
-                Alerts</a></li>
-            <li><a href="../home-automation.html" class="text-sm text-gray-400 hover:text-white transition-colors">Home
-                Automation</a></li>
-            <li><a href="../home-theater.html" class="text-sm text-gray-400 hover:text-white transition-colors">Home
-                Theater</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="font-bold mb-4">Contact Us</h4>
-          <div class="space-y-3 text-sm">
-            <p class="text-gray-400">
-              <span class="font-semibold text-white">Vicksburg (Main Office)</span><br>
-              <a href="tel:601-636-6955" class="hover:text-white">(601) 636-6955</a>
-            </p>
-            <p class="text-gray-400">
-              <span class="font-semibold text-white">Natchez</span><br>
-              <a href="tel:601-442-2293" class="hover:text-white">(601) 442-2293</a>
-            </p>
-            <p class="text-gray-400">
-              <span class="font-semibold text-white">Vidalia</span><br>
-              <a href="tel:318-336-6196" class="hover:text-white">(318) 336-6196</a>
-            </p>
-            <p class="text-gray-400">
-              <span class="font-semibold text-white">Toll Free</span><br>
-              <a href="tel:1-800-778-3173" class="hover:text-white">1-800-778-3173</a>
-            </p>
-            <p class="text-gray-400">
-              <a href="mailto:staff@berkleysecurity.com" class="hover:text-white">staff@berkleysecurity.com</a>
-            </p>
-          </div>
+
+      </div>
+
+      <div class="mt-12 border-t border-gray-200 pt-8">
+        <h2 class="text-2xl font-bold text-navy mb-6">Frequently Asked Questions</h2>
+        <div class="space-y-4">
+          <details class="bg-gray-50 rounded-xl"><summary class="flex items-center justify-between p-5 cursor-pointer"><h3 class="font-bold text-navy pr-4">What is AI video analytics?</h3><svg class="w-5 h-5 text-gray-400 faq-chevron flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></summary><div class="px-5 pb-5 text-gray-600"><p>AI that analyzes live camera feeds in real time. Detects people, vehicles, boundary crossings, loitering, and abandoned objects. Alerts you to specific events instead of recording everything passively.</p></div></details>
+          <details class="bg-gray-50 rounded-xl"><summary class="flex items-center justify-between p-5 cursor-pointer"><h3 class="font-bold text-navy pr-4">How do virtual tripwires work?</h3><svg class="w-5 h-5 text-gray-400 faq-chevron flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></summary><div class="px-5 pb-5 text-gray-600"><p>Digital lines drawn on the camera view through software. When a person or vehicle crosses in a specified direction, an alert fires with a video clip. No additional hardware needed. Can be repositioned instantly and scheduled by time.</p></div></details>
+          <details class="bg-gray-50 rounded-xl"><summary class="flex items-center justify-between p-5 cursor-pointer"><h3 class="font-bold text-navy pr-4">Do AI cameras reduce false alarms?</h3><svg class="w-5 h-5 text-gray-400 faq-chevron flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></summary><div class="px-5 pb-5 text-gray-600"><p>Yes. 90-95% reduction vs traditional motion detection. AI classifies objects before alerting, so trees, shadows, rain, and animals do not trigger notifications. You get 5-10 meaningful alerts instead of 100+ false ones.</p></div></details>
+          <details class="bg-gray-50 rounded-xl"><summary class="flex items-center justify-between p-5 cursor-pointer"><h3 class="font-bold text-navy pr-4">Can AI work with existing cameras?</h3><svg class="w-5 h-5 text-gray-400 faq-chevron flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></summary><div class="px-5 pb-5 text-gray-600"><p>Often yes. If your cameras are 2MP+ with H.264/H.265 encoding, you may add analytics via NVR upgrade. Some platforms process AI on the camera itself (edge-based), others at the recorder level.</p></div></details>
+          <details class="bg-gray-50 rounded-xl"><summary class="flex items-center justify-between p-5 cursor-pointer"><h3 class="font-bold text-navy pr-4">How much do AI analytics cameras cost?</h3><svg class="w-5 h-5 text-gray-400 faq-chevron flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></summary><div class="px-5 pb-5 text-gray-600"><p>$200-$600 per camera vs $100-$300 for standard. The $100-$300 per camera premium adds $800-$2,400 total for an 8-camera system. Pays for itself by eliminating false alarm review labor and enabling faster response.</p></div></details>
         </div>
       </div>
-    </div>
-    <div class="border-t border-gray-700">
-      <div class="max-w-7xl mx-auto px-4 py-4 flex flex-wrap justify-between items-center text-sm text-gray-400">
-        <p>&copy; <span id="year"></span> Berkley Security Inc. All rights reserved.</p>
-        <div class="flex gap-4">
-          <a href="../privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a>
-          <a href="../terms-and-conditions.html" class="hover:text-white transition-colors">Terms & Conditions</a>
-        </div>
-        <p>Hours: Mon–Fri 8am–5pm | 24/7 Emergency Availability</p>
-      </div>
-    </div>
-  </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+      <div class="mt-12 bg-navy text-white p-8 rounded-xl text-center shadow-md">
+        <h3 class="text-2xl font-bold mb-4">Upgrade to Intelligent Surveillance</h3>
+        <p class="mb-6 text-gray-300">AI-powered cameras that detect threats in real time. Professional configuration for your specific environment.</p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="tel:1-800-778-3173" class="bg-accent hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold text-lg inline-flex items-center gap-2 transition-colors"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>Call 1-800-778-3173</a>
+          <a href="../contact.html" class="bg-white/10 hover:bg-white/20 border border-white/30 text-white px-8 py-3 rounded-lg font-semibold text-lg transition-colors">Get Your Free Quote</a>
+        </div>
+      </div>
+
+      <div class="mt-12 border-t border-gray-200 pt-8">
+        <h3 class="text-2xl font-bold text-navy mb-6">Related Articles</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <a href="blog-4k-vs-1080p-cameras.html" class="block p-5 bg-gray-50 border border-gray-200 rounded-lg hover:shadow-md transition-shadow"><h4 class="font-bold text-navy mb-2 text-sm">4K vs 1080p Cameras</h4><p class="text-accent font-medium text-xs">Read Article &rarr;</p></a>
+          <a href="blog-security-camera-placement-guide.html" class="block p-5 bg-gray-50 border border-gray-200 rounded-lg hover:shadow-md transition-shadow"><h4 class="font-bold text-navy mb-2 text-sm">Camera Placement Guide</h4><p class="text-accent font-medium text-xs">Read Article &rarr;</p></a>
+          <a href="blog-car-dealership-security.html" class="block p-5 bg-gray-50 border border-gray-200 rounded-lg hover:shadow-md transition-shadow"><h4 class="font-bold text-navy mb-2 text-sm">Car Dealership Security</h4><p class="text-accent font-medium text-xs">Read Article &rarr;</p></a>
+        </div>
+        <div class="mt-6 text-center"><a href="../blog.html" class="inline-flex items-center justify-center px-6 py-3 border border-gray-300 shadow-sm text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 transition-colors">View All Articles</a></div>
+      </div>
+    </div></section>
+    <div class="bg-white py-8 border-t border-gray-200"><div class="max-w-4xl mx-auto px-4"><h3 class="font-bold text-navy text-xl mb-4">Related Services</h3><div class="flex gap-3 flex-wrap"><a href="../video-surveillance.html" class="px-4 py-2 bg-gray-100 rounded-full text-sm font-medium hover:bg-gray-200">Video Surveillance</a><a href="../security-systems.html" class="px-4 py-2 bg-gray-100 rounded-full text-sm font-medium hover:bg-gray-200">Security Alarms</a><a href="../home-automation.html" class="px-4 py-2 bg-gray-100 rounded-full text-sm font-medium hover:bg-gray-200">Home Automation</a><a href="../services.html" class="px-4 py-2 bg-gray-100 rounded-full text-sm font-medium hover:bg-gray-200">All Services</a></div></div></div>
+  </main>
+
+  <footer class="bg-charcoal text-white"><div class="max-w-7xl mx-auto px-4 py-12 lg:py-16"><div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12"><div><div class="flex items-center gap-2 mb-4"><img src="../src/img/Berkley-Security-Logo-V2-2-Color-White.png" alt="Berkley Security Inc." class="h-10 w-auto"></div><p class="text-sm text-gray-400 mb-4">Trusted security solutions since 1978. Protecting homes and businesses across Mississippi and Louisiana.</p><p class="text-sm text-gray-400">Licensed in MS & LA</p></div><div><h4 class="font-bold mb-4">Quick Links</h4><ul class="space-y-2"><li><a href="../" class="text-sm text-gray-400 hover:text-white transition-colors">Home</a></li><li><a href="../about.html" class="text-sm text-gray-400 hover:text-white transition-colors">About Us</a></li><li><a href="../services.html" class="text-sm text-gray-400 hover:text-white transition-colors">Services</a></li><li><a href="../blog.html" class="text-sm text-gray-400 hover:text-white transition-colors">Blog</a></li><li><a href="../contact.html" class="text-sm text-gray-400 hover:text-white transition-colors">Contact</a></li></ul></div><div><h4 class="font-bold mb-4">Services</h4><ul class="space-y-2"><li><a href="../security-systems.html" class="text-sm text-gray-400 hover:text-white transition-colors">Security Alarms</a></li><li><a href="../video-surveillance.html" class="text-sm text-gray-400 hover:text-white transition-colors">Video Surveillance</a></li><li><a href="../fire-alarms.html" class="text-sm text-gray-400 hover:text-white transition-colors">Fire Systems</a></li><li><a href="../medical-alerts.html" class="text-sm text-gray-400 hover:text-white transition-colors">Medical Alerts</a></li><li><a href="../home-automation.html" class="text-sm text-gray-400 hover:text-white transition-colors">Home Automation</a></li><li><a href="../home-theater.html" class="text-sm text-gray-400 hover:text-white transition-colors">Home Theater</a></li></ul></div><div><h4 class="font-bold mb-4">Contact Us</h4><div class="space-y-3 text-sm"><p class="text-gray-400"><span class="font-semibold text-white">Vicksburg (Main Office)</span><br>3512B Manor Dr.<br>Vicksburg, MS 39180<br><a href="tel:601-636-6955" class="hover:text-white">(601) 636-6955</a></p><p class="text-gray-400"><span class="font-semibold text-white">Natchez</span><br><a href="tel:601-442-2293" class="hover:text-white">(601) 442-2293</a></p><p class="text-gray-400"><span class="font-semibold text-white">Vidalia</span><br><a href="tel:318-336-6196" class="hover:text-white">(318) 336-6196</a></p><p class="text-gray-400"><span class="font-semibold text-white">Toll Free</span><br><a href="tel:1-800-778-3173" class="hover:text-white">1-800-778-3173</a></p><p class="text-gray-400"><a href="mailto:staff@berkleysecurity.com" class="hover:text-white">staff@berkleysecurity.com</a></p></div></div></div></div><div class="border-t border-gray-700"><div class="max-w-7xl mx-auto px-4 py-4 flex flex-wrap justify-between items-center text-sm text-gray-400"><p>&copy; <span id="year"></span> Berkley Security Inc. All rights reserved.</p><div class="flex gap-4"><a href="../privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a><a href="../terms-and-conditions.html" class="hover:text-white transition-colors">Terms & Conditions</a></div><p>Hours: Mon-Fri 8am-5pm | 24/7 Emergency Availability</p></div></div></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
   <script src="../src/js/main.js"></script>
 </body>
-
 </html>
