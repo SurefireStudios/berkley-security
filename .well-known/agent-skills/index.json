@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "berkley-seo-standards",
+      "type": "skill-md",
+      "description": "SEO, schema, and content standards for berkleysecurity.com. Use when creating or modifying any page, blog post, or city landing page on the Berkley Security website.",
+      "url": "/.well-known/agent-skills/berkley-seo-standards/SKILL.md",
+      "digest": "sha256:e60a8f5b5b5331cee5b80b134625e1c05b7770e206b6bbd779b2243cc2b1bc3c"
+    }
+  ]
+}
