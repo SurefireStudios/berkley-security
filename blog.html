@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -208,6 +208,19 @@
         </div>
       </div>
 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="blog-grid">
+          <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="h-48 bg-navy flex items-center justify-center shrink-0">
+              <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <p class="text-sm text-gray-500 mb-2">April 26, 2026</p>
+              <h2 class="text-xl font-bold text-navy mb-3">Securing Keith's Superstores: Comprehensive Commercial Security Systems Across Mississippi</h2>
+              <p class="text-gray-600 text-sm mb-4 flex-grow">Discover how Berkley Security provides state-of-the-art commercial security alarms and HD camera systems for Keith's Superstores across Mississippi, i...</p>
+              <a href="blog/blog-keiths-superstores-security-mississippi.html" class="text-accent font-semibold text-sm hover:text-blue-600 transition-colors mt-auto inline-block py-2">Read More &rarr;</a>
+            </div>
+          </article>
 <article class="bg-white flex flex-col rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
             <div class="h-48 bg-navy flex items-center justify-center shrink-0">
               <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -2438,6 +2451,7 @@
             </li>
             <li><a href="blog.html" class="text-sm text-gray-400 hover:text-white transition-colors">Blog</a></li>
             <li><a href="contact.html" class="text-sm text-gray-400 hover:text-white transition-colors">Contact</a></li>
+            <li><a href="locations.html" class="text-sm text-gray-400 hover:text-white transition-colors">Service Areas</a></li>
             <li><a href="https://www.facebook.com/Burglaralarmandvideocameras/" target="_blank"
                 rel="noopener noreferrer" class="text-sm text-gray-400 hover:text-white transition-colors"
                 aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -2510,45 +2524,46 @@
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const searchInput = document.getElementById('blog-search');
-      const grid = document.getElementById('blog-grid');
-      
-      if(searchInput && grid) {
-        const articles = grid.querySelectorAll('article');
+      const sortSelect  = document.getElementById('sort-select');
+      const grid        = document.getElementById('blog-grid');
 
-        searchInput.addEventListener('input', (e) => {
-          const term = e.target.value.toLowerCase().trim();
-          articles.forEach(article => {
-            const text = article.textContent.toLowerCase();
-            if (text.includes(term)) {
-              article.style.display = 'flex';
-            } else {
-              article.style.display = 'none';
-            }
-          });
+      if (!grid) return;
+
+      function parseArticleDate(article) {
+        const dateEl = article.querySelector('p.text-sm.text-gray-500');
+        if (!dateEl) return 0;
+        const d = new Date(dateEl.textContent.trim());
+        return isNaN(d) ? 0 : d.getTime();
+      }
+
+      function applySort() {
+        const order = sortSelect ? sortSelect.value : 'newest';
+        const articles = Array.from(grid.querySelectorAll('article'));
+        articles.sort((a, b) => {
+          const da = parseArticleDate(a);
+          const db = parseArticleDate(b);
+          return order === 'oldest' ? da - db : db - da;
+        });
+        articles.forEach(article => grid.appendChild(article));
+        applySearch();
+      }
+
+      function applySearch() {
+        const term = searchInput ? searchInput.value.toLowerCase().trim() : '';
+        const articles = grid.querySelectorAll('article');
+        articles.forEach(article => {
+          const text = article.textContent.toLowerCase();
+          article.style.display = (!term || text.includes(term)) ? 'flex' : 'none';
         });
       }
-    });
-  </script>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const searchInput = document.getElementById('blog-search');
-      const grid = document.getElementById('blog-grid');
-      
-      if(searchInput && grid) {
-        const articles = grid.querySelectorAll('article');
+      if (searchInput) {
+        searchInput.addEventListener('input', applySearch);
+      }
 
-        searchInput.addEventListener('input', (e) => {
-          const term = e.target.value.toLowerCase().trim();
-          articles.forEach(article => {
-            const text = article.textContent.toLowerCase();
-            if (text.includes(term)) {
-              article.style.display = 'flex';
-            } else {
-              article.style.display = 'none';
-            }
-          });
-        });
+      if (sortSelect) {
+        sortSelect.addEventListener('change', applySort);
+        applySort();
       }
     });
   </script>
