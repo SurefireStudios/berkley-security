@@ -61,7 +61,7 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What security options are available in a rural Delta town like Rolling Fork?","acceptedAnswer":{"@type":"Answer","text":"Berkley Security offers cellular-based alarm systems that do not require broadband internet. This makes them ideal for Rolling Fork and rural Sharkey County properties where cable or DSL service is limited or unavailable."}},{"@type":"Question","name":"How quickly can Berkley Security install a system in Rolling Fork?","acceptedAnswer":{"@type":"Answer","text":"Most residential installations are completed in a single visit. We schedule appointments around your availability and handle everything from wiring to programming. Our nearest office is in Vicksburg, about 45 minutes away."}},{"@type":"Question","name":"Can security cameras survive Mississippi Delta weather?","acceptedAnswer":{"@type":"Answer","text":"Yes. We install weather-rated outdoor cameras designed for extreme heat, humidity, and storms common in the Delta. Battery backup keeps your system operational during power outages."}},{"@type":"Question","name":"Does Berkley monitor rolling fork homes around the clock?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. Our 24/7 professional monitoring center dispatches Rolling Fork Police or Sharkey County Sheriff deputies the moment an alarm is triggered. No delays, no voicemail."}},{"@type":"Question","name":"What does a basic alarm system cost in Rolling Fork?","acceptedAnswer":{"@type":"Answer","text":"Entry-level systems start around $199 for a standard door/window package. Larger properties with cameras and cellular monitoring typically range from $500 to $1,500+. We provide free on-site estimates and offer financing."}},{"@type":"Question","name":"Can I monitor my Delta property cameras from my phone?","acceptedAnswer":{"@type":"Answer","text":"Yes. Every camera installation includes a free mobile app. You can view live feeds, review recorded clips, and receive instant motion alerts whether you are in Rolling Fork or across the country."}},{"@type":"Question","name":"Is Berkley Security licensed to operate in Mississippi?","acceptedAnswer":{"@type":"Answer","text":"Yes. Berkley Security has held a Mississippi license since 1978. We are also licensed in Louisiana. Every technician is background-checked and insured."}}]}</script>
 </head>
 <body class="font-sans text-gray-900 antialiased">
-<div class="bg-navy text-white text-sm" id="top-contact-bar">
+<div class="bg-navy text-white text-sm hidden lg:block" id="top-contact-bar">
 <div class="max-w-7xl mx-auto px-4 py-2 flex flex-wrap justify-between items-center">
 <div class="flex flex-wrap items-center gap-x-4 gap-y-1"><a class="hover:text-accent-light flex items-center gap-1" href="tel:1-800-778-3173"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
 <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
@@ -585,5 +585,27 @@
 </footer>
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 <script src="../src/js/main.js"></script>
+
+  <!-- Mobile Sticky Bottom Contact Bar -->
+  <div class="fixed bottom-0 left-0 right-0 bg-charcoal text-white z-50 lg:hidden shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] border-t border-white/10 pb-safe">
+    <div class="flex items-center justify-between px-3 py-3 max-w-md mx-auto">
+      <a href="tel:1-800-778-3173" class="flex items-center gap-1.5 text-sm font-bold hover:text-accent-light transition-colors">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+        </svg>
+        <span>800-778-3173</span>
+      </a>
+      <a href="mailto:staff@berkleysecurity.com" class="flex items-center gap-1.5 text-sm font-bold hover:text-accent-light transition-colors">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+        </svg>
+        <span>Email</span>
+      </a>
+      <a href="https://berkleysecurity.com/contact.html#consultation" class="bg-accent hover:bg-blue-600 px-4 py-2 rounded-lg text-sm font-bold transition-colors shadow-sm">
+        Get Quote
+      </a>
+    </div>
+  </div>
+
 </body>
 </html>

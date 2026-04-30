@@ -61,7 +61,7 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which security company is the most experienced in the Greenville area?","acceptedAnswer":{"@type":"Answer","text":"Berkley Security has been in business since 1978, making us one of the longest-operating security providers serving the Mississippi Delta. We are fully licensed in Mississippi and Louisiana."}},{"@type":"Question","name":"Do you install commercial security systems along Highway 82 in Greenville?","acceptedAnswer":{"@type":"Answer","text":"Yes. We design multi-camera surveillance and intrusion alarm systems for retail stores, restaurants, warehouses, and offices along the Highway 82 corridor and throughout downtown Greenville."}},{"@type":"Question","name":"How does monitoring work if my Greenville property loses power during a storm?","acceptedAnswer":{"@type":"Answer","text":"Every system includes a battery backup and communicates over the cellular network. Even if your power and internet go down, the alarm stays active and our monitoring center stays connected."}},{"@type":"Question","name":"Can you secure a catfish processing plant or warehouse?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. We install commercial-grade camera systems with perimeter sensors, access control, and monitored fire alarms for Greenville's processing facilities and industrial properties."}},{"@type":"Question","name":"What areas around Greenville does Berkley Security serve?","acceptedAnswer":{"@type":"Answer","text":"We cover all of Washington County, including Leland, Hollandale, Winterville, Metcalfe, and the surrounding agricultural areas. Cellular monitoring works great for rural properties outside city limits."}},{"@type":"Question","name":"How much does a security camera system cost in Greenville?","acceptedAnswer":{"@type":"Answer","text":"Residential camera packages typically start around $500 for a 4-camera setup. Commercial systems with higher camera counts and advanced recording run $1,000 to $3,000+. Free on-site estimates available."}},{"@type":"Question","name":"Does Berkley offer financing for security systems?","acceptedAnswer":{"@type":"Answer","text":"Yes. We offer flexible monthly payment plans so Greenville homeowners and business owners can get protected without a large upfront cost. Ask about current financing options during your free consultation."}}]}</script>
 </head>
 <body class="font-sans text-gray-900 antialiased">
-<div class="bg-navy text-white text-sm" id="top-contact-bar">
+<div class="bg-navy text-white text-sm hidden lg:block" id="top-contact-bar">
 <div class="max-w-7xl mx-auto px-4 py-2 flex flex-wrap justify-between items-center">
 <div class="flex flex-wrap items-center gap-x-4 gap-y-1"><a class="hover:text-accent-light flex items-center gap-1" href="tel:1-800-778-3173"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
 <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
@@ -561,5 +561,27 @@
 </footer>
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 <script src="../src/js/main.js"></script>
+
+  <!-- Mobile Sticky Bottom Contact Bar -->
+  <div class="fixed bottom-0 left-0 right-0 bg-charcoal text-white z-50 lg:hidden shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] border-t border-white/10 pb-safe">
+    <div class="flex items-center justify-between px-3 py-3 max-w-md mx-auto">
+      <a href="tel:1-800-778-3173" class="flex items-center gap-1.5 text-sm font-bold hover:text-accent-light transition-colors">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+        </svg>
+        <span>800-778-3173</span>
+      </a>
+      <a href="mailto:staff@berkleysecurity.com" class="flex items-center gap-1.5 text-sm font-bold hover:text-accent-light transition-colors">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+        </svg>
+        <span>Email</span>
+      </a>
+      <a href="https://berkleysecurity.com/contact.html#consultation" class="bg-accent hover:bg-blue-600 px-4 py-2 rounded-lg text-sm font-bold transition-colors shadow-sm">
+        Get Quote
+      </a>
+    </div>
+  </div>
+
 </body>
 </html>
