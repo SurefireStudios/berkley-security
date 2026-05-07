@@ -1,0 +1,24 @@
+# ---- Scripts & Tools (local only) ----
+scratch/
+bing_submit.py
+fix-blog-layout.js
+fix-blog-ui.js
+sort-blogs.js
+update-blogs.js
+SPEC.md
+
+# ---- Python ----
+__pycache__/
+*.pyc
+*.py
+
+# ---- System / IDE ----
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---- Gemini / AI ----
+.gemini/
