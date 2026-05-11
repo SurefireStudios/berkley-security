@@ -2,4 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://berkleysecurity.com/sitemap.xml
-LLMs-txt: https://berkleysecurity.com/llms.txt
