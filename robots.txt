@@ -1,4 +1,22 @@
 User-agent: *
 Allow: /
 
+# Block old WordPress ghost paths (site was migrated from WordPress to static HTML)
+Disallow: /wpautoterms/
+Disallow: /services/reliability-punctuality/
+Disallow: /home-theater-surround-sound-and-speakers/
+Disallow: /security-alarms/
+Disallow: /contact-vidalia-la
+Disallow: /wp-content/
+Disallow: /wp-includes/
+Disallow: /wp-admin/
+Disallow: /wp-json/
+Disallow: /feed/
+Disallow: /?s=
+Disallow: /page/
+
+# Block nested city paths (crawl artifacts from relative links)
+Disallow: /city/city/
+Disallow: /**/city/city/
+
 Sitemap: https://berkleysecurity.com/sitemap.xml
